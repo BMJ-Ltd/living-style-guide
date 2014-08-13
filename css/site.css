@@ -1,8 +1,10 @@
 body {
   position: relative; /* For scrollyspy */
-
-
+  /*font-family: 'Lato', sans-serif !important;*/
+ 
 }
+
+
 
 /* ----------------------------------
  * home
@@ -225,7 +227,7 @@ body {
 .docs-header {
     padding-top: 50px;
     border-top: 1px solid #50c1e9;
-    background-color: #7FA8D6;
+    background-color: rgba(42,110,187,0.60);
 }
 .docs-header.header--noBackground {
     background: none;
@@ -287,17 +289,17 @@ body {
     left: 0;
     border: none;
     border-radius: 0;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(42,110,187,1.0);
     width: 100%;
     z-index: 2000;
 }
 .navbar-custom .nav li a {
     display: block;
-    color: #50c1e9;
+    color: #fff;
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:hover {
-    color: #50c1e9;
+    color: #fff;
 }
 .navbar-custom .nav li a:active,
 .navbar-custom .nav li a.current {

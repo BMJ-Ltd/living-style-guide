@@ -38,6 +38,7 @@ module.exports = function(grunt) {
           sourceMap: true,
           sourceMapIncludeSources: true
       },
+	  
       dist: {
         files: {
           'js/site.min.js': [
