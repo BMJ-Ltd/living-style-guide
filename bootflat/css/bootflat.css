@@ -1,5 +1,5 @@
 /*
- * bootflat 2.0.2
+ * bootflat 2.0.3
  *
  * Description: BOOTFLAT is an open source Flat UI KIT based on Bootstrap 3.2.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.
  *
@@ -7,7 +7,7 @@
  *
  * By @Flathemes <info@flathemes.com>
  *
- * Last modify time: 2014-07-09
+ * Last modify time: 2014-08-13
  *
  * Licensed under the MIT license. Please see LICENSE for more information.
  *
@@ -201,8 +201,8 @@ blockquote {
   border-color: #4fc1e9;
 }
 .btn-info, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
-  background-color: #37bc9b;
-  border-color: #37bc9b;
+  background-color: #48cfad;
+  border-color: #48cfad;
 }
 .btn-info:hover, .btn-info:focus {
   background-color: #48cfad;
@@ -278,7 +278,7 @@ blockquote {
   border-left-color: #d1293a;
 }
 .btn-group .btn-info, .btn-group .btn-info:focus, .btn-group .btn-info:active, .btn-group .btn-info.active {
-  border-left-color: #2fa084;
+  border-left-color: #33c19d;
 }
 .btn-group .btn:first-child, .btn-group .btn-primary:first-child, .btn-group .btn-success:first-child, .btn-group .btn-warning:first-child, .btn-group .btn-danger:first-child, .btn-group .btn-info:first-child {
   border-left-color: transparent;
@@ -300,7 +300,7 @@ blockquote {
   border-top-color: #d1293a !important;
 }
 .btn-group-vertical .btn-info, .btn-group-vertical .btn-info:focus, .btn-group-vertical .btn-info:active, .btn-group-vertical .btn-info.active, .btn-group-vertical .btn-group .btn-info {
-  border-top-color: #2fa084 !important;
+  border-top-color: #33c19d !important;
 }
 .btn-group-vertical .btn:not(.btn-default):first-child, .btn-group-vertical .btn-primary:first-child, .btn-group-vertical .btn-success:first-child, .btn-group-vertical .btn-warning:first-child, .btn-group-vertical .btn-danger:first-child, .btn-group-vertical .btn-info:first-child {
   border-top: none;
