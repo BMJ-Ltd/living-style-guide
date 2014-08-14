@@ -4,8 +4,6 @@ body {
  
 }
 
-
-
 /* ----------------------------------
  * home
  * ---------------------------------- */
@@ -227,7 +225,7 @@ body {
 .docs-header {
     padding-top: 50px;
     border-top: 1px solid #50c1e9;
-    background-color: rgba(42,110,187,0.60);
+    background-color: rgba(42, 110, 187, 0.6);
 }
 .docs-header.header--noBackground {
     background: none;
@@ -289,7 +287,7 @@ body {
     left: 0;
     border: none;
     border-radius: 0;
-    background-color: rgba(42,110,187,1.0);
+    background-color: rgba(42, 110, 187, 1);
     width: 100%;
     z-index: 2000;
 }
@@ -563,21 +561,13 @@ body {
     width: 100%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
-.color-swatches .light,
-.color-swatches .dark {
-    width: 50%;
-    height: 50px;
+.color-swatches .bmj-color-swatch {
+	height: 70px;
+	-webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
 }
-.color-swatches .light {
-    -webkit-border-radius: 4px 0 0 0;
-    -moz-border-radius: 4px 0 0 0;
-    border-radius: 4px 0 0 0;
-}
-.color-swatches .dark {
-    -webkit-border-radius: 0 4px 0 0;
-    -moz-border-radius: 0 4px 0 0;
-    border-radius: 0 4px 0 0;
-}
+
 .color-swatches .infos {
     padding: 5px 10px;
 }

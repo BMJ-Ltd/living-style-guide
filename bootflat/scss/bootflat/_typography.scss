@@ -1,5 +1,13 @@
 // Variables
 //------------------------------------------------------
+
+$bmj_font: "interfaceregular", Helvetica, Arial, sans-serif;
+$main_font: "Helvetica Neue", helvetica, Arial, sans-serif;
+$monospace_font: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$font-family-sans-serif:  "interfaceregular", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
 $body-font-color:            $darkgray-dark !default;
 $body-background-color:      $white !default;
 
@@ -21,8 +29,7 @@ $image-radius:               4px !default;
    */
 
   body {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    // font-family: 'Lato', sans-serif;
+	font-family: "interfaceregular", Helvetica, Arial, sans-serif;
     color: $body-font-color;
     background-color: $body-background-color;
   }

@@ -20,7 +20,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/site.min.js"></script>
   </head>
-  <body style="background-color: #f1f2f6;">
+  <body>
     <div class="docs-header">
       <!--nav-->
       <nav class="navbar navbar-default navbar-custom" role="navigation">
@@ -50,7 +50,7 @@
           <h4>The online visual language and front end framework for BMJ</h4>
         </div>
         <div class="topic__infos">
-         <div class="container">
+          <div class="container">
             This page gives Designers and Developers reusable componants that can be utilised on any digital product.
           </div>
         </div>
@@ -61,18 +61,41 @@
       <!-- Color Swatches
       ================================================== -->
       <div class="example">
-        <h2 class="example-title">Color Swatches</h2>
+      <h1>Colour</h1>
+      <p>Online, other than white - which should always be the background colour, all BMJ websites should use the base colour blue (#2A6EBB) and various tints. Rather than using the hexedecimal reference, use varying degrees of opacity in your css.</p>
+
+<p>Avoid using grey, instead use a tint of blue (for instance in lines and borders)</p>
+        <h2 class="example-title">Primary colour palette</h2>
         <div class="row">
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#5D9CEC"></div>
-                  <div class="pull-right dark" style="background-color:#4A89DC"></div>
-                </div>
+                  <div class="bmj-color-swatch" style="background-color: #2A6EBB"></div>
                 <div class="infos">
-                  <h4>BLUE JEANS</h4>
-                  <p>#5D9CEC, #4A89DC</p>
+                  <h4>BMJ BLUE</h4>
+                  <p>#2A6EBB, &nbsp;&nbsp;R42/G110/B187</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#7FA8D6"></div>
+                <div class="infos">
+                  <h4>BMJ BLUE - 60%</h4>
+                  <p>#7FA8D6, &nbsp;R127/G168/B214</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">            
+                  <div class="bmj-color-swatch" style="background-color:#D4E2F1"></div>          
+                <div class="infos">
+                  <h4>BMJ BLUE - 20%</h4>
+                  <p> #D4E2F1, &nbsp;R212/G226/B241</p>
                 </div>
               </div>
             </div>
@@ -80,13 +103,36 @@
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#4FC1E9"></div>
-                  <div class="pull-right dark" style="background-color:#3BAFDA"></div>
-                </div>
+                  <div class="bmj-color-swatch" style="background-color:#747678"></div>
                 <div class="infos">
-                  <h4>AQUA</h4>
-                  <p>#4FC1E9, #3BAFDA</p>
+                  <h4>BMJ GREY</h4>
+                  <p>#747678, &nbsp;R116/G118/B120</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#ACADAE"></div>
+                <div class="infos">
+                  <h4>BMJ GREY - 60%</h4>
+                  <p>#ACADAE, R172/G173/B174</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#E3E4E4"></div>
+                <div class="infos">
+                  <h4>BMJ GREY - 20%</h4>
+                  <p>#E3E4E4, R227/G228/B228</p>
                 </div>
               </div>
             </div>
@@ -94,28 +140,28 @@
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#48CFAD"></div>
-                  <div class="pull-right dark" style="background-color:#37BC9B"></div>
-                </div>
+                  <div class="bmj-color-swatch" style="background-color:#FFFFFF"></div>
                 <div class="infos">
-                  <h4>MINT</h4>
-                  <p>#48CFAD, #37BC9B</p>
+                  <h4>WHITE</h4>
+                  <p>#FFFFFF, R225/G225/B225</p>
                 </div>
               </div>
             </div>
-          </div
+          </div>
+		</div>
         
+        
+        
+        
+        <h2 class="example-title">Secondary colour palette</h2>
+        <div class="row">
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#F5F7FA"></div>
-                  <div class="pull-right dark" style="background-color:#E6E9ED"></div>
-                </div>
+                <div class="bmj-color-swatch" style="background-color:#F0AB00"></div>
                 <div class="infos">
-                  <h4>LIGHT GRAY</h4>
-                  <p>#F5F7FA, #E6E9ED</p>
+                  <h4>BMJ YELLOW</h4>
+                  <p>#F0AB00, R240/G171/B0</p>
                 </div>
               </div>
             </div>
@@ -123,31 +169,79 @@
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#CCD1D9"></div>
-                  <div class="pull-right dark" style="background-color:#AAB2BD"></div>
-                </div>
-                <div class="infos">
-                  <h4>MEDIUM GRAY</h4>
-                  <p>#CCD1D9, #AAB2BD</p>
-                </div>
+                <div class="bmj-color-swatch" style="background-color:#E37222"></div>
+                    <div class="infos">
+                      <h4>BMJ ORANGE</h4>
+                      <p>#E37222 R227/G114/B34</p>
+                    </div>
               </div>
             </div>
           </div>
+            
           <div class="col-md-2">
             <div class="color-swatches">
               <div class="swatches">
-                <div class="clearfix">
-                  <div class="pull-left light" style="background-color:#656D78"></div>
-                  <div class="pull-right dark" style="background-color:#434A54"></div>
-                </div>
+				<div class="bmj-color-swatch" style="background-color:#CD202C"></div>
                 <div class="infos">
-                  <h4>DARK GRAY</h4>
-                  <p>#656D78, #434A54</p>
+                  <h4>BMJ RED</h4>
+                  <p>#CD202C, R205/G32/B44</p>
                 </div>
               </div>
             </div>
           </div>
+          
+          <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+               <div class="bmj-color-swatch" style="background-color:#C50084"></div>
+                <div class="infos">
+                  <h4>BMJ PINK</h4>
+                  <p>#C50084, R197/G0/B132</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#7D5CC6"></div>
+                <div class="infos">
+                  <h4>BMJ PURPLE</h4>
+                  <p>#7D5CC6,R125/G92/B198</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#00B2A9"></div>
+                <div class="infos">
+                  <h4>BMJ AQUA</h4>
+                  <p>#00B2A9, R0/G178/B169</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <div class="col-md-2">
+            <div class="color-swatches">
+              <div class="swatches">
+                  <div class="bmj-color-swatch" style="background-color:#69BE28"></div>
+                <div class="infos">
+                  <h4>BMJ GREEN</h4>
+                  <p>#69BE28, R105/G190/B40</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
       <!-- Buttons

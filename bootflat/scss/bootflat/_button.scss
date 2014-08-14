@@ -1,20 +1,20 @@
 // Variables
 //------------------------------------------------------
-$button-normal:                  $mediumgray-dark !default;
+$button-normal:                  $grey-lighter !default;
 $button-default:                 $white !default;
-$button-primary:                 $aqua-dark !default;
-$button-success:                 $grass-dark !default;
-$button-danger:                  $grapefruit-dark !default;
-$button-warning:                 $sunflower-dark !default;
-$button-info:                    $mint-light !default;
+$button-primary:                 $brand-primary !default;
+$button-success:                 $brand-success !default;
+$button-danger:                  $brand-danger !default;
+$button-warning:                 $brand-warning !default;
+$button-info:                    $brand-info !default;
 
-$button-normal-hover:            $mediumgray-light !default;
+$button-normal-hover:            $grey-lightest !default;
 $button-default-hover:           $button-default !default;
-$button-primary-hover:           $aqua-light !default;
-$button-success-hover:           $grass-light !default;
-$button-danger-hover:            $grapefruit-light !default;
-$button-warning-hover:           $sunflower-light !default;
-$button-info-hover:              $mint-light !default;
+$button-primary-hover:           $brand-primary-lighter !default;
+$button-success-hover:           $brand-success-lighter !default;
+$button-danger-hover:            $brand-danger-lighter !default;
+$button-warning-hover:           $brand-warning-lighter !default;
+$button-info-hover:              $brand-info-lighter !default;
 
 $button-font-color-dark:         $darkgray-dark !default;
 $button-font-color-light:        $white !default;

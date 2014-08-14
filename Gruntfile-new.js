@@ -8,7 +8,32 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    
+    //Amy 
+     watch: {
+            css: {
+                files: 'bootflat/scss/**/*.scss',
+                tasks: ['compass'],
+            }
+        },
 
+
+        compass: {
+            options: {
+                config: 'config.rb',
+                force: false
+            },
+            dist: {
+                options: {}
+            },
+            production: {
+                options: {
+                    outputStyle: 'compressed',
+                    lineComments: false
+                }
+            }
+        },
+    //Amy 
     meta: {
       defaultPath: 'bootflat'
     },
@@ -134,11 +159,25 @@ module.exports = function(grunt) {
   grunt.registerTask('task-js', ['uglify']);
   grunt.registerTask('task', ['clean', 'task-css', 'task-js']);
   grunt.registerTask('build', ['task']);
-  grunt.registerTask('default', ['task']);
+  //for AMy , disabled this here and added it at the end
+  //grunt.registerTask('default', ['task']);
   grunt.registerTask('test', ['task', 'csslint', 'validation']);
 
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
   // This can be overzealous, so its changes should always be manually reviewed!
   grunt.registerTask('change-version-number', 'sed');
+
+
+  //Amy
+ // Load tasks
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+   
+
+    // Create debug & production versions
+    grunt.registerTask('production', ['compass:production']);
+
+    grunt.registerTask('default', ['watch']);
+//Amy
 };
