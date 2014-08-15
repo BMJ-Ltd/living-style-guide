@@ -1,23 +1,23 @@
 // Variables
 //------------------------------------------------------
-$list-primary:                                 $aqua-light !default;
-$list-info:                                    $mint-light !default;
-$list-warning:                                 $sunflower-light !default;
-$list-success:                                 $grass-light !default;
-$list-danger:                                  $grapefruit-light !default;
+$list-primary:                                 $brand-primary !default;
+$list-info:                                    $brand-info !default;
+$list-warning:                                 $brand-warning !default;
+$list-success:                                 $brand-success !default;
+$list-danger:                                  $brand-danger !default;
 
-$list-primary-hover:                           $aqua-dark !default;
-$list-info-hover:                              $mint-dark !default;
-$list-warning-hover:                           $sunflower-dark !default;
-$list-success-hover:                           $grass-dark !default;
-$list-danger-hover:                            $grapefruit-dark !default;
+$list-primary-hover:                           $brand-primary-lighter !default;
+$list-info-hover:                              $brand-info-lighter !default;
+$list-warning-hover:                           $brand-warning-lighter !default;
+$list-success-hover:                           $brand-success-lighter !default;
+$list-danger-hover:                            $brand-danger-lighter !default;
 
-$list-border-color:                            $lightgray-dark !default;
+$list-border-color:                            $grey-lightest !default;
 $list-background-color:                        $white !default;
 $list-font-color:                              $darkgray-dark !default;
 $list-font-color-hover:                        $mediumgray-dark !default;
 
-$list-item-background-color:                   $lightgray-dark !default;
+$list-item-background-color:                   $grey-lightest !default;
 
 $list-radius:                                  4px !default;
 $list-shadow:                                  0 1px 2px rgba(0, 0, 0, .2) !default;
