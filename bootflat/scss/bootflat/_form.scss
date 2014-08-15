@@ -3,14 +3,14 @@
 $form-normal:                      $mediumgray-dark !default;
 $form-default:                     $white !default;
 $form-primary:                     $brand-primary !default;
-$form-success:                     $grass-dark !default;
-$form-danger:                      $grapefruit-dark !default;
-$form-warning:                     $sunflower-dark !default;
-$form-info:                        $mint-dark !default;
+$form-success:                     $brand-success !default;
+$form-danger:                      $brand-danger !default;
+$form-warning:                     $brand-warning !default;
+$form-info:                        $brand-info !default;
 
-$message-success:                  $grass-dark !default;
-$message-danger:                   $grapefruit-dark !default;
-$message-warning:                  $sunflower-dark !default;
+$message-success:                  $brand-success !default;
+$message-danger:                   $brand-danger !default;
+$message-warning:                  $brand-warning !default;
 
 $form-font-color:                  $darkgray-dark !default;
 $form-placeholder-font-color:      $lightgray-dark !default;

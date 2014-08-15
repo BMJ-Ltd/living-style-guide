@@ -1,6 +1,6 @@
 // Variables
 //------------------------------------------------------
-$selecter-primary:                     $bmjBlue !default;
+$selecter-primary:                     $brand-primary !default;
 
 $selecter-border-color:                $mediumgray-dark !default;
 $selecter-background-color:            $white !default;
@@ -14,8 +14,8 @@ $selecter-group-background-color:      $lightgray-light !default;
 
 $selecter-item-border-color:		   $lightgray-dark !default;
 $selecter-item-hover:		           $lightgray-dark !default;
-$selecter-item-selected:		       $bmjBlue !default;
-$selecter-item-selected-border-color:  $bmjBlue !default;
+$selecter-item-selected:		       $brand-primary !default;
+$selecter-item-selected-border-color:  $brand-primary !default;
 
 
 // Exports
