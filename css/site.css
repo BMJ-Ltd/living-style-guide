@@ -44,7 +44,7 @@ body {
     padding-top: 100px;
     text-align: center;
     background-color: rgba(255, 255, 255, .9);
-    min-height: 746px;
+    min-height: 650px;
 }
 .index h2 {
     margin-top: 10px;
@@ -154,7 +154,7 @@ body {
     margin: 0 auto;
 }
 .desc .desc__introduces h3 {
-    padding: 70px 0 14px;
+    padding: 20px 0 14px;
     max-width: 900px;
     font-size: 28px;
 }
@@ -316,11 +316,14 @@ body {
     background-color: rgba(255, 255, 255, .9);
 }
 .navbar-custom .navbar-brand {
-    padding: 5px 15px;
     opacity: .7;
     filter:alpha(opacity=70);
     transition: opacity .4s ease-in-out;
 }
+.navbar-brand {
+    padding: 5px 10px;
+}
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:active {
     opacity: 1;

@@ -135,7 +135,7 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-text,
       & .navbar-nav > li > a {
-          color: lighten($navbar-inverse-background-color, 55%);
+          color: lighten($navbar-inverse-background-color, 100%);
       }
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
@@ -154,7 +154,7 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > .disabled > a,
       & .navbar-nav > .disabled > a:hover,
       & .navbar-nav > .disabled > a:focus {
-          color: lighten($navbar-inverse-background-color, 40%);
+          color: lighten($navbar-inverse-background-color, 100%);
           background-color: transparent;
       }
       & .navbar-toggle {

@@ -15,11 +15,6 @@
  *
  */
 
-/* bmj-mixins 
-
-Adding the BOOTSTRAP MIXINS here so that the BMJ-CORE is Bootstrap Agnostic
-
-*/
 /**
  * typography
  * --------------------------------------------------
@@ -1766,7 +1761,7 @@ blockquote {
   background-color: transparent;
 }
 .navbar-inverse .navbar-text, .navbar-inverse .navbar-nav > li > a {
-  color: #8c8c8c;
+  color: white;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: white;
@@ -1776,7 +1771,7 @@ blockquote {
   background-color: black;
 }
 .navbar-inverse .btn-link[disabled]:hover, fieldset[disabled] .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:focus, .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: #666;
+  color: white;
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
