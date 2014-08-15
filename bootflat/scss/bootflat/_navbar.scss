@@ -1,7 +1,8 @@
 // Variables
 //------------------------------------------------------
 $navbar-background-color:                    $brand-primary !default;
-$navbar-background-color-active:             $brand-primary-lighter !default;
+$navbar-background-color-hover:              $brand-primary-lighter !default;
+$navbar-background-color-active:             $bmjBlueLight !default;
 
 $navbar-font-color:                          $white !default;
 $navbar-item-background-color-hover:         $navbar-background-color-active !default;
@@ -26,7 +27,7 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-brand,
       & .navbar-link,
       & .btn-link {
-          color: darken($navbar-background-color, 15%);
+          color: lighten($navbar-background-color, 95%);
       }
       & .navbar-brand:hover,
       & .navbar-brand:focus,
@@ -38,11 +39,12 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-text,
       & .navbar-nav > li > a {
-          color: darken($navbar-background-color, 15%);
+          color: lighten($navbar-background-color, 100%);
       }
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
           color: $navbar-font-color;
+		  background-color: $navbar-background-color-hover;
       }
       & .navbar-nav > .active > a,
       & .navbar-nav > .active > a:hover,
@@ -80,7 +82,7 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > .open > a:hover,
       & .navbar-nav > .open > a:focus {
           color: $navbar-font-color;
-          background-color: $navbar-background-color;
+          background-color: $navbar-background-color-active;
       }
 
       @media (max-width: 767px) {
@@ -121,7 +123,7 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-brand,
       & .navbar-link,
       & .btn-link {
-          color: lighten($navbar-inverse-background-color, 55%);
+          color: lighten($navbar-inverse-background-color, 95%);
       }
       & .navbar-brand:hover,
       & .navbar-brand:focus,
