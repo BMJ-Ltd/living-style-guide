@@ -20,7 +20,7 @@ $grey:                   lighten(#000, 33.5%); // #555
 $grey-light:             lighten(#000, 60%);   // #999
 $grey-lighter:       	 lighten(#000, 80%);   // #ccc
 $grey-lightest:          lighten(#000, 93.5%); // #eee
-$white:                  lighten(#000, 100%); // #fff;
+$white:                  lighten(#000, 100%); // #fff
 
 
 // BMJ BLUES
@@ -67,17 +67,9 @@ $brand-danger-lighter:  $redLighter;
 
 
 
-// color elements
+// BOOTFLAT color elements
 $white:                       #FFF !default;
 $black:                       #000 !default;
-
-$bluejeans-dark:              #4A89DC !default;
-$bluejeans-light:             #5D9CEC !default;
-
-$aqua-dark:                   #3BAFDA !default;
-$aqua-light:                  #4FC1E9 !default;
-
-
 
 $lightgray-dark:              #E6E9ED !default;
 $lightgray-light:             #F5F7FA !default;
@@ -87,6 +79,10 @@ $mediumgray-light:            #CCD1D9 !default;
 
 $darkgray-dark:               #434A54 !default;
 $darkgray-light:              #656D78 !default;
+
+
+
+
 
 // Global Mixins
 //------------------------------------------------------

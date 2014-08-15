@@ -15,6 +15,11 @@
  *
  */
 
+/* bmj-mixins 
+
+Adding the BOOTSTRAP MIXINS here so that the BMJ-CORE is Bootstrap Agnostic
+
+*/
 /**
  * typography
  * --------------------------------------------------
@@ -394,28 +399,28 @@ blockquote {
  * --------------------------------------------------
  */
 .popover {
-  color: white;
-  background-color: #434a54;
-  border-color: #434a54;
+  color: #333;
+  background-color: #eee;
+  border-color: #eee;
 }
 .popover-title {
   padding-bottom: 0;
   font-weight: bold;
-  color: #aab2bd;
+  color: #333;
   background-color: transparent;
   border-bottom: none;
 }
 .popover.top .arrow, .popover.top .arrow:after {
-  border-top-color: #434a54;
+  border-top-color: #eee;
 }
 .popover.right .arrow, .popover.right .arrow:after {
-  border-right-color: #434a54;
+  border-right-color: #eee;
 }
 .popover.bottom .arrow, .popover.bottom .arrow:after {
-  border-bottom-color: #434a54;
+  border-bottom-color: #eee;
 }
 .popover.left .arrow, .popover.left .arrow:after {
-  border-left-color: #434a54;
+  border-left-color: #eee;
 }
 
 /**
