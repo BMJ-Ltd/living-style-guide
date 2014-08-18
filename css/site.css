@@ -425,19 +425,7 @@ body {
 .docs-article:last-child {
     border-bottom: none;
 }
-.docs-article h3 {
-    margin: 0 0 10px;
-    padding-bottom: 10px;
-    font-family: "Georgia", "Palatino", "Times New Roman", "Times" !important;
-    font-weight: normal;
-    font-size: 25px;
-    color: #50c1e9;
-}
-.docs-article p {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 22px;
-}
+
 .docs-article dd {
     margin-bottom: 10px;
 }
@@ -450,7 +438,6 @@ body {
 }
 .docs-article .item__infos {
     margin: 0 0 10px 0;
-    font-size: 14px;
     list-style: disc;
 }
 .docs-article .item__infos li {
@@ -474,7 +461,6 @@ body {
 .example .example-title {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 18px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
 }
 .example .example-title span {

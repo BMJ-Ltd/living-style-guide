@@ -113,6 +113,18 @@ $darkgray-light:              #656D78 !default;
   white-space: nowrap;
 }
 
+
+// REM sizing
+///////////////////////////////////
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5){
+  font-size: ($sizeValue * 1) + px;
+  line-height: ($line * 1) + px;
+  font-size: ($sizeValue / 10) + rem;
+  line-height: ($line / 10) + rem;
+}
+
+
+
 // We use this to add across browser prefixes
 @mixin prefixer($property, $value, $prefixes: webkit moz spec) {
 	@if $experimental {

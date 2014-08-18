@@ -7,7 +7,7 @@
  *
  * By @Flathemes <info@flathemes.com>
  *
- * Last modify time: 2014-08-15
+ * Last modify time: 2014-08-18
  *
  * Licensed under the MIT license. Please see LICENSE for more information.
  *
@@ -15,26 +15,50 @@
  *
  */
 
+@charset "UTF-8";
+/* @fontbase = 14
+@line-height-base = 20
+*/
+/* Unit-less `line-height` for use in components like buttons. */
+/*Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.*/
+/* By default, this inherits from the `<body>`. */
 /**
  * typography
  * --------------------------------------------------
  */
-body {
-  font-family: "interfaceregular", Helvetica, Arial, sans-serif;
-  color: #434a54;
-  background-color: white;
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
-a {
-  color: #2a6ebb;
-  text-decoration: none;
+html, button, input, select, textarea {
+  font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
+  color: #333;
 }
-a:hover, a:focus {
-  color: #82afe3;
-  text-decoration: none;
+
+code {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
-a:focus {
-  outline: none;
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+h1, h2, h3 {
+  /* $line-height-base ├À $fontbase */
+  font-weight: bold;
+  line-height: 1.428;
+}
+
+body {
+  margin: 0;
+  font-family: "interfaceregular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+  letter-spacing: .03em;
 }
 
 h1,
@@ -49,10 +73,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: "interfaceregular", Helvetica, Arial, sans-serif;
+  line-height: 1.3em;
   color: inherit;
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
 }
 
 h1 small,
@@ -70,70 +95,166 @@ h6 small,
   color: #e7e9ec;
 }
 
-h1,
-h2,
-h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-h4,
-h5,
-h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-h6 {
+h1.page-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 27px;
+  font-size: 2.7rem;
   font-weight: normal;
+  line-height: 30px;
+  line-height: 3rem;
 }
 
-h1,
-.h1 {
-  font-size: 51px;
-}
-
-h2,
-.h2 {
-  font-size: 43px;
-}
-
-h3,
-.h3 {
+h1 {
+  margin-top: 2rem;
+  margin-bottom: .35rem;
   font-size: 30px;
+  font-size: 3rem;
+  line-height: 25px;
+  line-height: 2.5rem;
 }
 
-h4,
-.h4 {
+h2 {
+  margin-top: 2rem;
+  margin-bottom: .35rem;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: .35rem;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+
+h5 {
   font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 25px;
+  line-height: 2.5rem;
 }
 
-h5,
-.h5 {
+h6 {
   font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 25px;
+  line-height: 2.5rem;
 }
 
-h6,
-.h6 {
+p, ul, ol {
+  margin-bottom: .8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+
+table {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+
+small, aside {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+div + h1,
+div + h2,
+div + h3 {
+  margin-top: 0;
+}
+
+/* Article lists */
+article ul {
+  padding-left: 0;
+  margin-left: 18px;
+  text-indent: -15px;
+  list-style: none outside none;
+}
+
+article ul li,
+article ol li {
+  padding: 1% 0;
+}
+
+article ul li {
+  list-style-type: none;
+}
+
+article ul li:before {
+  padding-right: 10px;
+  padding-bottom: 5px;
   font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+  color: #999;
+  vertical-align: middle;
+  content: "\2666";
 }
 
-blockquote {
-  border-left: 3px solid #ccd1d9;
+/* Aside */
+small h1, aside h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 42px;
+  line-height: 4.2rem;
 }
-
-.img-rounded {
-          border-radius: 4px;
-
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
+small h2, aside h2 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 39px;
+  line-height: 3.9rem;
 }
-
-.img-comment {
-  margin: 24px 0;
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.2;
+small h3, aside h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 36px;
+  line-height: 3.6rem;
+}
+small h4, aside h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 33px;
+  line-height: 3.3rem;
+}
+small h5, aside h5 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 30px;
+  line-height: 3rem;
+}
+small h6, aside h6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 27px;
+  line-height: 2.7rem;
+}
+small p, small ul, aside p, aside ul {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
 }
 
 @font-face {
