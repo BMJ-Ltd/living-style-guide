@@ -1,7 +1,7 @@
 // Variables
 //------------------------------------------------------
-$tab-background-color:                 $lightgray-dark !default;
-$tab-background-color-hover:           $lightgray-light !default;
+$tab-background-color:                 $grey-lighter !default;
+$tab-background-color-hover:           $grey-lightest !default;
 $tab-radius:                           4px !default;
 
 $tab-font-color:                       $darkgray-dark !default;
@@ -9,7 +9,7 @@ $tab-font-color-acitve:                $white !default;
 
 $tab-aside-width:                      74px !default;
 
-$tab-border-color:                     $mediumgray-light !default;
+$tab-border-color:                     $grey-light !default;
 // Exports
 //------------------------------------------------------
 
@@ -19,6 +19,8 @@ $tab-border-color:                     $mediumgray-light !default;
    * tab
    * --------------------------------------------------
    */
+   
+   
   .nav-tabs {
       border-bottom: none;
       background-color: $tab-background-color;

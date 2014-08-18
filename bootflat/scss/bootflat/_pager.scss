@@ -4,7 +4,7 @@ $paper-background-color:                  $brand-primary !default;
 $paper-background-color-hover:            $brand-primary-lighter !default;
 
 $paper-font-color:                        $white !default;
-$paper-font-color-disabled:               $lightgray-dark !default;
+$paper-font-color-disabled:               $grey-lightest !default;
 
 // Exports
 //------------------------------------------------------
@@ -22,6 +22,7 @@ $paper-font-color-disabled:               $lightgray-dark !default;
       color: $paper-font-color;
       background-color: $paper-background-color;
       border-color: $paper-background-color;
+	  border-radius: $border-radius-base; ;
     }
     & li > a:hover,
     & li > a:focus {

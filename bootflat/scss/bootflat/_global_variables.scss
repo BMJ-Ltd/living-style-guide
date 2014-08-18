@@ -1,0 +1,119 @@
+// Global Variables
+//------------------------------------------------------
+$modules:                     () !default;
+
+$experimental:                true !default;
+
+// prefix elements
+$prefix-webkit:               true !global;
+$prefix-moz:                  true !global;
+$prefix-spec:                 true !global;
+
+
+
+//== Colors ==//
+//## Grey and brand colors for use across Bootstrap.
+
+$grey-darker:            lighten(#000, 13.5%); // #222
+$grey-dark:              lighten(#000, 20%);   // #333
+$grey:                   lighten(#000, 33.5%); // #555
+$grey-light:             lighten(#000, 60%);   // #999
+$grey-lighter:       	 lighten(#000, 80%);   // #ccc
+$grey-lightest:          lighten(#000, 93.5%); // #eee
+$white:                  lighten(#000, 100%); // #fff
+
+
+// BMJ BLUES
+// -------------------------
+$bmjBlue:       		#2A6EBB;
+$bmjBlueDark:           darken($bmjBlue, 20%);  
+$bmjBlueDarker:         darken($bmjBlue, 40%);  
+$bmjBlueLight:          lighten($bmjBlue, 10%);  
+$bmjBlueLighter:        lighten($bmjBlue, 25%);  
+$bmjBlueLightest:       lighten($bmjBlue, 50%);  
+$bmjBlueFade:           fade($bmjBlue, 10%);  
+$bmjBlueFader:      	fade($bmjBlue, 25%);  
+$bmjBlueFadest:       	fade($bmjBlue, 50%);  
+
+//BMJ SECONDARY PALETTE
+// -------------------------
+$blue:                  $bmjBlue;
+$blueDark:              $bmjBlueDark;
+$green:                 #69BE28;
+$greenLighter:          lighten($green, 25%);
+$red:                   #CD202C;
+$redLighter:            lighten($red, 25%);
+$yellow:                #F0AB00;
+$yellowLighter:			lighten($yellow, 25%);
+$orange:                #E37222;
+$orangeLighter:			lighten($yellow, 25%);
+$pink:                  #C50084;
+$pinkLighter:			lighten($pink, 25%);
+$purple:                #7D5CC6;
+$purpleLighten:			lighten($pink, 25%);
+
+
+$brand-primary:         $bmjBlue;
+$brand-primary-lighter: $bmjBlueLighter;
+$brand-success:         $green;
+$brand-success-lighter: $greenLighter;
+$brand-info:            $bmjBlueLighter;
+$brand-info-lighter:    $bmjBlueLightest;
+$brand-warning:         $yellow;
+$brand-warning-lighter: $yellowLighter;
+$brand-danger:          $red;
+$brand-danger-lighter:  $redLighter;
+
+
+
+
+// BOOTFLAT color elements
+$white:                       #FFF !default;
+$black:                       #000 !default;
+
+$lightgray-dark:              #E6E9ED !default;
+$lightgray-light:             #F5F7FA !default;
+
+$mediumgray-dark:             #AAB2BD !default;
+$mediumgray-light:            #CCD1D9 !default;
+
+$darkgray-dark:               #434A54 !default;
+$darkgray-light:              #656D78 !default;
+
+
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     6px;
+$padding-base-horizontal:   12px;
+
+$padding-large-vertical:    11px;
+$padding-large-horizontal:  19px;
+
+$padding-small-vertical:    2px;
+$padding-small-horizontal:  10px;
+
+$padding-xs-vertical:       0px;
+$padding-xs-horizontal:     6px;
+
+$line-height-large:         1.33;
+$line-height-small:         1.5;
+
+$border-radius-base:        2px;
+$border-radius-large:       4px;
+$border-radius-small:       1px;
+
+//
+// BMJ Widths
+//
+$page_width: 980px;
+$max_page_width: 1170px;
+
+//
+// BMJ Breakpoints
+//
+$mobile: 320px;
+$tablet: 768px; //This is set to page width by default
+$desktop: $page_width;
+$large-screen: $max_page_width;
+
+

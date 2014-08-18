@@ -22,6 +22,48 @@ $button-font-color-light:        $white !default;
 $button-opacity:                 45 !default;
 $button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
 
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal;
+
+$btn-default-color:              $grey-dark;
+$btn-default-bg:                 $white;
+$btn-default-border:             $bmjBlueLight;
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
+
+$btn-success-color:              $white;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             $btn-success-bg;
+
+$btn-info-color:                 $white;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                $btn-info-bg;
+
+$btn-warning-color:              $white;
+$btn-warning-bg:                 $brand-warning;
+$btn-warning-border:             $btn-warning-bg;
+
+$btn-danger-color:               $white;
+$btn-danger-bg:                  $brand-danger;
+$btn-danger-border:              $btn-danger-bg;
+
+$btn-navbar-toggle-color:        $brand-primary;
+$btn-navbar-toggle-bg:           $white;
+$btn-navbar-toggle-border:       $btn-navbar-toggle-bg;
+
+$btn-inverse-toggle-color:        $white;
+$btn-inverse-toggle-bg:           $brand-primary;
+$btn-inverse-toggle-border:       $btn-inverse-toggle-bg;
+
+
+$btn-link-disabled-color:        $grey-light;
+
+
 // Exports
 //------------------------------------------------------
 
@@ -33,6 +75,7 @@ $button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
    */
   .btn {
     color: $button-font-color-light;
+	border-radius: $border-radius-base; 
 
     &,
     &.disabled, 

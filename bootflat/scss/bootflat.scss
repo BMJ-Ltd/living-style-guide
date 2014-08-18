@@ -3,9 +3,10 @@
 @import
 
   // Variables, Extends, Mixins
-  "bootflat/global",
+  "bootflat/global_mixins",
+  "bootflat/global_variables",
 
-  // Base
+ // Base
   "bootflat/typography",
   "bootflat/bmj-fonts",
   "bootflat/button",
@@ -38,3 +39,5 @@
   "bootflat/accordion",
   "bootflat/footer",
   "bootflat/dropdown";
+  
+  

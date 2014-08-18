@@ -1,9 +1,9 @@
 // Variables
 //------------------------------------------------------
-$popover-background-color:               $grey-lightest !default;
+$popover-background-color:               $white !default;
 $popover-font-color:                     $grey-dark !default;
 $popover-title-font-color:               $grey-dark !default;
-
+$popover-border-color:              	 $grey-lighter !default;
 
 // Exports
 //------------------------------------------------------
@@ -18,7 +18,7 @@ $popover-title-font-color:               $grey-dark !default;
   .popover {
       background-color: $popover-background-color;
       color: $popover-font-color;
-      border-color: $popover-background-color;
+      border-color: $popover-border-color;
 
       @at-root &-title {
           padding-bottom: 0;

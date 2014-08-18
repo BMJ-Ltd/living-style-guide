@@ -279,6 +279,7 @@ small p, small ul, aside p, aside ul {
  */
 .btn {
   color: white;
+  border-radius: 2px;
 }
 .btn, .btn.disabled, .btn[disabled] {
   background-color: #ccc;
@@ -516,8 +517,8 @@ small p, small ul, aside p, aside ul {
  */
 .popover {
   color: #333;
-  background-color: #eee;
-  border-color: #eee;
+  background-color: white;
+  border-color: #ccc;
 }
 .popover-title {
   padding-bottom: 0;
@@ -527,16 +528,16 @@ small p, small ul, aside p, aside ul {
   border-bottom: none;
 }
 .popover.top .arrow, .popover.top .arrow:after {
-  border-top-color: #eee;
+  border-top-color: white;
 }
 .popover.right .arrow, .popover.right .arrow:after {
-  border-right-color: #eee;
+  border-right-color: white;
 }
 .popover.bottom .arrow, .popover.bottom .arrow:after {
-  border-bottom-color: #eee;
+  border-bottom-color: white;
 }
 .popover.left .arrow, .popover.left .arrow:after {
-  border-left-color: #eee;
+  border-left-color: white;
 }
 
 /**
@@ -700,15 +701,16 @@ small p, small ul, aside p, aside ul {
   color: white;
   background-color: #2a6ebb;
   border-color: #2a6ebb;
+  border-radius: 2px;
 }
 .pager li > a:hover, .pager li > a:focus {
   background-color: #82afe3;
   border-color: #82afe3;
 }
 .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
-  color: #e6e9ed;
+  color: #eee;
   background-color: white;
-  border-color: #e6e9ed;
+  border-color: #eee;
 }
 
 /**
@@ -1598,7 +1600,7 @@ small p, small ul, aside p, aside ul {
  * --------------------------------------------------
  */
 .nav-tabs {
-  background-color: #e6e9ed;
+  background-color: #ccc;
   border-bottom: none;
           border-radius: 4px 4px 0 0;
 
@@ -1607,7 +1609,7 @@ small p, small ul, aside p, aside ul {
 }
 .nav-tabs > li {
   margin-bottom: 0;
-  border-left: 1px solid #ccd1d9;
+  border-left: 1px solid #999;
 }
 .nav-tabs > li:first-child {
   border-left: none;
@@ -1628,7 +1630,7 @@ small p, small ul, aside p, aside ul {
      -moz-border-radius: 4px 0 0 0;
 }
 .nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
-  background-color: #f5f7fa;
+  background-color: #eee;
   border: none;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
@@ -1640,7 +1642,7 @@ small p, small ul, aside p, aside ul {
 }
 .nav-tabs li.dropdown.open .dropdown-toggle {
   color: #434a54;
-  background-color: #f5f7fa;
+  background-color: #eee;
 }
 .nav-tabs li.dropdown.active.open .dropdown-toggle {
   color: #434a54;
@@ -1720,7 +1722,7 @@ small p, small ul, aside p, aside ul {
 .tabs-left .nav-tabs > li,
 .tabs-right .nav-tabs > li {
   float: none;
-  border-top: 1px solid #ccd1d9;
+  border-top: 1px solid #999;
   border-left: none;
 }
 
