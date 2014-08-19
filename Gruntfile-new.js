@@ -159,7 +159,7 @@ module.exports = function(grunt) {
   grunt.registerTask('task-js', ['uglify']);
   grunt.registerTask('task', ['clean', 'task-css', 'task-js']);
   grunt.registerTask('build', ['task']);
-  //for AMy , disabled this here and added it at the end
+  //Amy , disabled this here and added it at the end
   //grunt.registerTask('default', ['task']);
   grunt.registerTask('test', ['task', 'csslint', 'validation']);
 
@@ -173,6 +173,7 @@ module.exports = function(grunt) {
  // Load tasks
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
+	
    
 
     // Create debug & production versions

@@ -1,5 +1,11 @@
 # Require any additional compass plugins here.
-#require 'bootstrap-sass'
+require 'animate-sass'
+require 'bootstrap-sass'
+require 'breakpoint'
+require 'compass-recipes'
+require 'compass-normalize'
+require 'susy'
+require 'rgbapng'
 
 # Set this to the root of your project when deployed:
 http_path = "/"

@@ -7,7 +7,7 @@
  *
  * By @Flathemes <info@flathemes.com>
  *
- * Last modify time: 2014-08-18
+ * Last modify time: 2014-08-19
  *
  * Licensed under the MIT license. Please see LICENSE for more information.
  *
@@ -2451,8 +2451,10 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .footer-logo, .footer-nav {
   float: left;
-  width: 20%;
-  padding: 0 20px;
+}
+.footer-explore {
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .5);
 }
 @media (max-width: 768px) {
   .footer-logo {
@@ -2496,6 +2498,23 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .footer-copyright {
   color: white;
+}
+.footer ul.global-footer-links li {
+  display: inline;
+  list-style: none;
+}
+.footer ul.global-footer-links li > a {
+  color: white;
+}
+.footer ul.global-footer-links li > a:hover, .footer ul.global-footer-links li > a:active {
+  color: white;
+  text-decoration: underline;
+}
+.footer ul li.divider-vertical {
+  display: inline;
+  height: 16px;
+  margin: 0 9px;
+  border-left: 1px solid #dadada;
 }
 
 /**
