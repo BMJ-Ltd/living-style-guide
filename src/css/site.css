@@ -1,28 +1,33 @@
 body {
   position: relative; /* For scrollyspy */
   /*font-family: 'Lato', sans-serif !important;*/
- 
+
 }
 
 /* ----------------------------------
  * home
  * ---------------------------------- */
+
 .home {
     background: url(../img/index.png) no-repeat 50% 100px;
 }
+
 @media (max-width: 767px) {
     .home {
         background: none;
     }
 }
+
 /* ----------------------------------
  * icons
  * ---------------------------------- */
+
 @font-face {
   font-family: "angularicons";
-  src: url("../angularicons/angularicons.eot");
-  src: url("../angularicons/angularicons.eot?#iefix") format("embedded-opentype"), url("../angularicons/angularicons.woff") format("woff"), url("../angularicons/angularicons.ttf") format("truetype"), url("../angularicons/angularicons.svg") format("svg");
+  src: url("../fonts/angularicons.eot");
+  src: url("../fonts/angularicons.eot?#iefix") format("embedded-opentype"), url("../fonts/angularicons.woff") format("woff"), url("../fonts/angularicons.ttf") format("truetype"), url("../fonts/angularicons.svg") format("svg");
 }
+
 .icon {
   display: inline-block;
   font-family: "angularicons";
@@ -37,6 +42,7 @@ body {
   content: attr(data-icon);
   speak: none;
 }
+
 /* ----------------------------------
  * index
  * ---------------------------------- */

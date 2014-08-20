@@ -1,6 +1,7 @@
 # Ignore docs files
 .ruby-version
 .sass-cache
+Gemfile.lock
 
 # Numerous always-ignore extensions
 *.diff
@@ -34,7 +35,8 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+dist
+vendor
 
 # Composer
 composer.lock
-/vendor

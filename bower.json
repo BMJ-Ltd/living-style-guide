@@ -1,44 +1,20 @@
 {
-  "name": "Bootflat",
-  "version": "2.0.3",
-  "homepage": "http://bootflat.github.io",
+  "name": "living-style-guide",
+  "version": "0.1.0",
+  "description": "BMJ Living Style Guide site",
+  "homepage": "https://github.com/BMJ-Ltd/living-style-guide",
   "authors": [
-    "flathemes <info@flathemes.com>"
-  ],
-  "description": "BOOTFLAT is an open source Flat UI KIT based on Bootstrap 3.2.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bootflat/bootflat.github.io.git"
-  },
-  "main": [
-    "bootflat/css/*",
-    "bootflat/scss/*",
-    "bootflat/fonts/*",
-    "bootflat/js/*",
-    "bootflat/img/*"
-  ],
-  "keywords": [
-	"mobile",
-	"html5",
-	"css3",
-	"scss",
-	"bootflat",
-	"bootstrap",
-	"flat",
-	"flat ui",
-	"ui"
+    "Amy Asante <aasante@bmj.com>",
+    "James Skinner <jskinner@bmj.com> (https://github.com/james-skinner)"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "angularicons",
-    "free-psd.html",
-    "documentation.html",
-    "getting-started.html",
-    "index.html",
-    "test",
-    "tests"
-  ]
+  "dependencies": {
+    "Stepper": "~3.0.7",
+    "Selecter": "~3.1.5",
+    "iCheck": "~1.0.2",
+    "jquery": "1.11.1",
+    "boot": "~3.2.0",
+    "font-awesome": "~4.1.0",
+    "breakpoint-sass": "~2.5.0"
+  }
 }
