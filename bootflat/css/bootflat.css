@@ -1821,7 +1821,7 @@ small p, small ul, aside p, aside ul {
 .navbar-default .navbar-text, .navbar-default .navbar-nav > li > a {
   color: white;
 }
-.navbar-default .navbar-text, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: white;
   background-color: #82afe3;
 }

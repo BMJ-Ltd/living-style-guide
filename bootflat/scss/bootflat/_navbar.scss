@@ -41,7 +41,7 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > li > a {
           color: lighten($navbar-background-color, 100%);
       }
-	  & .navbar-text,
+	 
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
           color: $navbar-font-color;
