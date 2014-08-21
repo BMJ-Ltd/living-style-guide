@@ -7,7 +7,7 @@
  *
  * By @Flathemes <info@flathemes.com>
  *
- * Last modify time: 2014-08-19
+ * Last modify time: 2014-08-21
  *
  * Licensed under the MIT license. Please see LICENSE for more information.
  *
@@ -574,8 +574,9 @@ small p, small ul, aside p, aside ul {
  * --------------------------------------------------
  */
 .breadcrumb {
+  padding: 8px 0;
   color: #434a54;
-  background-color: #e6e9ed;
+  background-color: transparent;
 }
 .breadcrumb > .active {
   color: #434a54;
@@ -1008,7 +1009,7 @@ small p, small ul, aside p, aside ul {
   width: 0;
   height: 0;
   content: "";
-  border-top: 4px solid black;
+  border-top: 4px solid #000;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -1556,7 +1557,7 @@ small p, small ul, aside p, aside ul {
   font-weight: bold;
 }
 .alert-dismissable .close {
-  color: black;
+  color: #000;
 }
 .alert-info {
   background-color: #abcaec;
@@ -1585,7 +1586,7 @@ small p, small ul, aside p, aside ul {
   opacity: .45;
 }
 .alert .btn-link, .alert .btn-link:hover, .alert .btn-link:focus {
-  color: black;
+  color: #000;
   filter: alpha(opacity=65);
   opacity: .65;
 }
@@ -1820,13 +1821,17 @@ small p, small ul, aside p, aside ul {
 .navbar-default .navbar-text, .navbar-default .navbar-nav > li > a {
   color: white;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-text, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: white;
   background-color: #82afe3;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a {
   color: white;
   background-color: #4387d5;
+}
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #82afe3;
 }
 .navbar-default .btn-link[disabled]:hover, fieldset[disabled] .navbar-default .btn-link:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:focus, .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #235a9a;
@@ -1841,28 +1846,32 @@ small p, small ul, aside p, aside ul {
   border-color: #215691;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #2a6ebb;
+  background-color: white;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: #4387d5;
+  border-color: #82afe3;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a {
   color: white;
   background-color: #4387d5;
 }
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: #82afe3;
+}
 @media (max-width: 767px) {
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: #4387d5;
+    background-color: #82afe3;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .divider {
-    background-color: #4387d5;
+    background-color: #82afe3;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #1c497d;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
-    background-color: #4387d5;
+    background-color: #82afe3;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .dropdown-header {
     color: #1c497d;
@@ -1891,15 +1900,15 @@ small p, small ul, aside p, aside ul {
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: white;
-  background-color: black;
+  background-color: #000;
 }
 .navbar-inverse .btn-link[disabled]:hover, fieldset[disabled] .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:focus, .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
   color: white;
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  background-color: black;
-  border-color: black;
+  background-color: #000;
+  border-color: #000;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #1a1a1a;
@@ -1909,25 +1918,25 @@ small p, small ul, aside p, aside ul {
   background-color: #8c8c8c;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: black;
+  border-color: #000;
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   color: white;
-  background-color: black;
+  background-color: #000;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    background-color: black;
+    background-color: #000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .divider {
-    background-color: black;
+    background-color: #000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #8c8c8c;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
-    background-color: black;
+    background-color: #000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     color: #bfbfbf;
@@ -2465,6 +2474,10 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
     float: none;
     width: 100%;
   }
+  .footer-explore {
+    padding-left: 0;
+    border-left: none;
+  }
 }
 .footer-logo {
   height: 32px;
@@ -2510,7 +2523,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   color: white;
   text-decoration: underline;
 }
-.footer ul li.divider-vertical {
+.footer ul.global-footer-links li ul li.divider-vertical {
   display: inline;
   height: 16px;
   margin: 0 9px;

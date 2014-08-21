@@ -19,7 +19,8 @@ $breadcrumb-arrow-background-color-hover:      $brand-primary-lighter !default;
    */
   .breadcrumb {
       color: $breadcrumb-font-color;
-      background-color: $breadcrumb-background-color;
+      background-color: transparent;
+	  padding: 8px 0px;
       & > .active {
           color: $breadcrumb-font-color;
       }
