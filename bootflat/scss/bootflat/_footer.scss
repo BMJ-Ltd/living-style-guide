@@ -89,13 +89,14 @@ $footer-logo-color:                  $white !default;
 	 color: $footer-menu-item-color-hover;
 	 text-decoration: underline;
 	}
-	 ul li.divider-vertical {
+	
+}
+ ul li.divider-vertical {
 	 border-left: 1px solid #dadada;
 	 display: inline;
 	 height: 16px;
 	 margin: 0 9px;
 	}
-}
 
 }
 }
