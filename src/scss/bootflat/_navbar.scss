@@ -5,7 +5,7 @@ $navbar-background-color-hover:              $brand-primary-lighter !default;
 $navbar-background-color-active:             $bmjBlueLight !default;
 
 $navbar-font-color:                          $white !default;
-$navbar-item-background-color-hover:         $navbar-background-color-active !default;
+$navbar-item-background-color-hover:         $brand-primary-lighter !default;
 
 $navbar-inverse-background-color:            $black !default;
 
@@ -44,13 +44,13 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
           color: $navbar-font-color;
-		  background-color: $navbar-background-color-hover;
+          background-color: $navbar-background-color-hover;
       }
       & .navbar-nav > .active > a,
       & .navbar-nav > .active > a:hover,
       & .navbar-nav > .active > a:focus {
           color: $navbar-font-color;
-          background-color: $navbar-background-color-active;
+          background-color: $navbar-background-color-hover;
       }
       & .btn-link[disabled]:hover,
       fieldset[disabled] & .btn-link:hover,
@@ -64,15 +64,15 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-toggle {
           border-color: darken($navbar-background-color, 15%);
-          background-color: darken($navbar-background-color, 15%); 
+          background-color: darken($navbar-background-color, 15%);
       }
       & .navbar-toggle:hover,
       & .navbar-toggle:focus {
           border-color: darken($navbar-background-color, 10%);
-          background-color: darken($navbar-background-color, 10%); 
+          background-color: darken($navbar-background-color, 10%);
       }
       & .navbar-toggle .icon-bar {
-          background-color: $navbar-background-color;
+          background-color: white;
       }
       & .navbar-collapse,
       & .navbar-form {
@@ -82,13 +82,13 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > .open > a:hover,
       & .navbar-nav > .open > a:focus {
           color: $navbar-font-color;
-          background-color: $navbar-background-color-active;
+          background-color: $navbar-background-color-hover;
       }
 
       @media (max-width: 767px) {
           & .navbar-nav > li > a:hover,
           & .navbar-nav > li > a:focus {
-              background-color: $navbar-background-color-active;
+              background-color: $navbar-background-color-hover;
           }
           & .navbar-nav .open .dropdown-menu > .divider {
               background-color: $navbar-item-background-color-hover;
@@ -159,12 +159,12 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-toggle {
           border-color: $navbar-inverse-background-color;
-          background-color: $navbar-inverse-background-color; 
+          background-color: $navbar-inverse-background-color;
       }
       & .navbar-toggle:hover,
       & .navbar-toggle:focus {
           border-color: lighten($navbar-inverse-background-color, 10%);
-          background-color: lighten($navbar-inverse-background-color, 10%); 
+          background-color: lighten($navbar-inverse-background-color, 10%);
       }
       & .navbar-toggle .icon-bar {
           background-color: lighten($navbar-inverse-background-color, 55%);
@@ -209,7 +209,4 @@ $navbar-inverse-background-color:            $black !default;
           }
       }
   }
-
 }
-
-

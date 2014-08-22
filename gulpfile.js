@@ -133,7 +133,7 @@ gulp.task('watch', ['build'], function() {
     return list.concat(typeof cur.src === 'string' ? [cur.src] : cur.src);
   }, []);
 
-  gulp.watch([ config.src.scss, 'src/css/**/*.css' ],     [ 'styles' ]);
+  gulp.watch('{src/css/**/*.css,src/scss/**/*.s[ac]ss}',  [ 'styles' ]);
   gulp.watch(config.src.js,                               [ 'scripts' ]);
   gulp.watch(files,                                       [ 'files' ]);
 
