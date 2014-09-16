@@ -1,2 +1,0 @@
-living-style-guide
-==================
