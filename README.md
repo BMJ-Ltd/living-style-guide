@@ -1,4 +1,4 @@
 living-style-guide
 ==================
 
-Our design guidelines in code
+Our design guidelines in code.
