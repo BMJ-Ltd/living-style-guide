@@ -1,0 +1,10 @@
+.sub-nav .nav {
+  a:hover {
+    background-color: $grey-lightest !important;
+  }
+  .selected {
+    padding: 10px 15px;
+    background-color: $bmjBlue;
+	color: white;
+  }
+}
