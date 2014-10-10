@@ -6,20 +6,24 @@ Our design guidelines in code.
 
 ### Installation
 
-Run the following commands:
+Run the following commandsin cmd line or clone the Living Style guide using Sourcetree:
 
 ```sh
 git clone https://github.com/BMJ-Ltd/living-style-guide
 cd living-style-guide
-npm install
-bower install
 ```
-
 If you don't have [Bower](http://bower.io/) installed, install it using:
 
 ```sh
 npm install -g bower
 ```
+The run the following commands:
+
+```sh
+npm install
+bower install
+```
+
 
 ### Usage
 
