@@ -307,7 +307,7 @@ body {
 }
 .navbar-custom .nav li a:active,
 .navbar-custom .nav li a.current {
-    border-bottom: 3px solid #50c1e9;
+    background-color: #4387D5;
 }
 .navbar-custom .navbar-toggle {
     position: relative;
@@ -322,9 +322,7 @@ body {
     background-color: rgba(255, 255, 255, .9);
 }
 .navbar-custom .navbar-brand {
-    opacity: .7;
-    filter:alpha(opacity=70);
-    transition: opacity .4s ease-in-out;
+   
 }
 .navbar-brand {
     padding: 5px 10px;
