@@ -59,6 +59,10 @@ body {
     line-height: 26px;
     font-weight: normal;
 }
+.index h1 {
+	font-size: 5rem;
+	line-height: 5.2rem;
+}
 .index h3 {
     margin-top: 20px;
     font-size: 14px;
@@ -94,13 +98,22 @@ body {
 }
 @media (max-width: 767px) {
     .index {
-        padding-top: 0;
-        min-height: 600px;
+        padding-top: 80px;
+        min-height: 50px;
     }
+
     .index .download-link .btn {
         padding: 15px;
     }
 }
+
+@media (min-width: 992px) {
+  .index h1 {
+    margin-bottom: 50px;
+  }
+  
+}
+
 /* ----------------------------------
  * social
  * ---------------------------------- */
@@ -331,9 +344,9 @@ body {
 }
 @media (max-width: 992px) {
   .navbar-custom .navbar-brand {
-    width: 63px;
     overflow: hidden;
   }
+  
 }
 @media (max-width: 767px) {
   .navbar-custom {
