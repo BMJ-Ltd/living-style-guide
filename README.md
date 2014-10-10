@@ -38,4 +38,4 @@ gulp
 This will build the project to the `dist` sub-directory, and then watch for changes made to the contents of `src` and automatically rebuild `dist`.
 
 
-To update you dev changes onto the live site you will need to copy the contents of you 'dist' file ONLY into another directory called 'living-style-guide-live' which needs to be set up to push to the 'gh-pages' directory in git
+To update you dev changes onto the live site you will need to copy the contents of you `dist` file ONLY into another directory called 'living-style-guide-live' which needs to be set up to push to the 'gh-pages' directory in git
