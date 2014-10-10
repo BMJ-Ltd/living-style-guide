@@ -1,3 +1,5 @@
+/* Scss Document */
+
 // Variables
 //------------------------------------------------------
 $button-normal:                  $grey-lighter !default;
@@ -30,7 +32,7 @@ $btn-font-weight:                normal;
 
 $btn-default-color:              $grey-dark;
 $btn-default-bg:                 $white;
-$btn-default-border:             $bmjBlueLight;
+$btn-default-border:             $grey-lighter;
 
 $btn-primary-color:              $white;
 $btn-primary-bg:                 $brand-primary;
@@ -63,17 +65,18 @@ $btn-inverse-toggle-border:       $btn-inverse-toggle-bg;
 
 $btn-link-disabled-color:        $grey-light;
 
+/* --- END VARIABLES -- */
 
-// Exports
-//------------------------------------------------------
 
-@include exports("button") {
 
-  /**
-   * button
-   * --------------------------------------------------
-   */
-  .btn {
+
+
+.btn-mini {
+    border-radius: 2px;
+    padding: 0 6px;
+}
+
+.btn {
     color: $button-font-color-light;
 	border-radius: $border-radius-base; 
 
@@ -128,6 +131,7 @@ $btn-link-disabled-color:        $grey-light;
         &:focus,
         &:active, 
         &.active {
+			color: $button-font-color-dark;
             border-color: $button-normal-hover;
             background-color: $button-normal-hover;           
         } 
@@ -243,6 +247,4 @@ $btn-link-disabled-color:        $grey-light;
         background-color: $button-danger-hover;      
     }
   }
-}
-
 

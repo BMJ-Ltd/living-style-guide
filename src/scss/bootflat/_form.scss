@@ -154,8 +154,13 @@ $search-icon-line-height:          30px !default;
       }
       & .form-control-feedback {
           color: $message-success;
+		 
       }    
   }
+  .form-control-feedback {
+        margin-top: 10px;
+		  
+      }
   .has-warning {
       & .help-block,
       & .control-label,
@@ -204,7 +209,14 @@ $search-icon-line-height:          30px !default;
       }
       & .form-control-feedback {
           color:  $message-danger;
+		  
       }
+  }
+  .form-search .btn {
+		border-radius: 4px;  
+  }
+  .form-search .search-query, .form-search .search-query:first-child, .form-search .search-query:last-child {
+		border-radius: 4px;  
   }
 
 }

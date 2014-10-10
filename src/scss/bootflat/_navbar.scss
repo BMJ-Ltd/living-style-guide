@@ -24,6 +24,9 @@ $navbar-inverse-background-color:            $black !default;
           background-color: $navbar-background-color;
           border-color: $navbar-background-color;
       }
+	  & .navbar-brand {
+		  padding: 7px 15px;  
+	  }
       & .navbar-brand,
       & .navbar-link,
       & .btn-link {
