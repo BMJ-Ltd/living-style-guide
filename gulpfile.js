@@ -2,6 +2,7 @@
 var gulp              = require('gulp');
 var $                 = require('gulp-load-plugins')({ lazy: true });
 var merge             = require('merge-stream');
+var streamqueue       = require('streamqueue');
 var path              = require('path');
 
 
@@ -27,8 +28,7 @@ var config = {
     css: {
       preSass: [
         'src/vendor/boot/dist/css/bootstrap.css',
-        'src/vendor/font-awesome/css/font-awesome.css',
-        'src/vendor/angularicons/css/angularicons.css'
+        'src/vendor/font-awesome/css/font-awesome.css'
       ],
       postSass: [
         'src/css/**/*.css'
@@ -75,18 +75,18 @@ gulp.task('clean', function() {
 // Styles
 
 gulp.task('styles', function() {
-  var scss = gulp.src(config.src.scss)
-    // .pipe($.plumber(plumberErrorHandler))
-    .pipe($.rubySass({
-      require: ['breakpoint'],
-      trace: true
-    }));
-
-  var cssPre = gulp.src(config.src.css.preSass),
+  var
+    cssPre = gulp.src(config.src.css.preSass),
+    scss = gulp.src(config.src.scss)
+      // .pipe($.plumber(plumberErrorHandler))
+      .pipe($.rubySass({
+        require: ['breakpoint'],
+        trace: true
+      })),
     cssPost = gulp.src(config.src.css.postSass);
 
-  return merge(cssPre, scss, cssPost)
-    // .pipe($.autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+  // Concatenate vendor CSS, then compiled SASS, finally anything found in src/css
+  return streamqueue({ objectMode: true }, cssPre, scss, cssPost)
     .pipe($.concat('site.css'))
     .pipe(gulp.dest('dist/css'))
     .pipe($.rename({ suffix: '.min' }))
@@ -124,8 +124,8 @@ gulp.task('files', function() {
 
 
 // ----------------------------------------------------------------------------
+// Watch for file changes
 
-//watch
 gulp.task('watch', ['build'], function() {
   // livereload.listen();
 
