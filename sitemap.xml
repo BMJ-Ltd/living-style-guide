@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
-<!-- Free Sitemap Generator http://www.sitemapx.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://bootflat.github.io/</loc>
-<priority>1.0</priority>
-<lastmod>2014-04-22T04:00:57+00:00</lastmod>
-<changefreq>Always</changefreq>
-</url>
-<url>
-<loc>http://bootflat.github.io/documentation.html</loc>
-<priority>0.8</priority>
-<lastmod>2014-04-22T04:00:57+00:00</lastmod>
-<changefreq>Always</changefreq>
-</url>
-<url>
-<loc>http://bootflat.github.io/free-psd.html</loc>
-<priority>0.8</priority>
-<lastmod>2014-04-22T04:00:57+00:00</lastmod>
-<changefreq>Always</changefreq>
-</url>
-<url>
-<loc>http://bootflat.github.io/getting-started.html</loc>
-<priority>0.8</priority>
-<lastmod>2014-04-22T04:00:57+00:00</lastmod>
-<changefreq>Always</changefreq>
-</url>
-<url>
-<loc>http://bootflat.github.io/index.html</loc>
-<priority>0.8</priority>
-<lastmod>2014-04-22T04:00:57+00:00</lastmod>
-<changefreq>Always</changefreq>
-</url>
+  <url>
+    <loc>http://technology.bmj.com/living-style-guide/</loc>
+    <priority>0.8</priority>
+    <lastmod>2014-10-15T15:48:36.865</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:3000/getting-started.html</loc>
+    <priority>0.6</priority>
+    <lastmod>2014-10-15T15:48:36.865</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:3000/components.html</loc>
+    <priority>1.0</priority>
+    <lastmod>2014-10-15T15:48:36.865</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://localhost:3000/code-centre.html</loc>
+    <priority>0.8</priority>
+    <lastmod>2014-10-15T15:48:36.865</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
