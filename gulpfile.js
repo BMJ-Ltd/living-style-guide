@@ -1,9 +1,14 @@
 
+var path              = require('path');
 var gulp              = require('gulp');
-var $                 = require('gulp-load-plugins')({ lazy: true });
+var $                 = require('gulp-load-plugins')();
+var browserSync       = require('browser-sync');
+var reload            = browserSync.reload;
 var merge             = require('merge-stream');
 var streamqueue       = require('streamqueue');
-var path              = require('path');
+var del               = require('del');
+
+var config            = require('./build-config');
 
 
 // ----------------------------------------------------------------------------
@@ -18,56 +23,24 @@ var plumberErrorHandler = {
 
 
 // ----------------------------------------------------------------------------
+// Clean all build output
 
-var config = {
-  src: {
-    scss: [
-      'src/scss/**/!(_)*.scss'
-    ],
-
-    css: {
-      preSass: [
-        'src/vendor/boot/dist/css/bootstrap.css',
-        'src/vendor/font-awesome/css/font-awesome.css'
-      ],
-      postSass: [
-        'src/css/**/*.css'
-      ]
-    },
-
-    js: [
-      'src/vendor/jquery/dist/jquery.js',
-      'src/vendor/boot/dist/js/bootstrap.js',
-      'src/vendor/iCheck/icheck.js',
-      'src/vendor/Stepper/jquery.fs.stepper.js',
-      'src/vendor/Selecter/jquery.fs.selecter.js',
-      'src/js/application.js'
-    ],
-
-    files: [
-      {
-        src: 'src/static/**/*.*',
-        base: 'src/static'
-      },
-      {
-        src: 'src/vendor/boot/dist/fonts/*.*',
-        base: 'src/vendor/boot/dist'
-      },
-      {
-        src: 'src/vendor/font-awesome/fonts/*.*',
-        base: 'src/vendor/font-awesome'
-      }
-    ]
-  }
-};
+gulp.task('clean', function(cb) {
+  del([
+    config.dist.path + '/**'
+  ], cb);
+});
 
 
 // ----------------------------------------------------------------------------
-// Clean all build output
+// Update the browser
 
-gulp.task('clean', function() {
-  return gulp.src('dist', { read: false })
-    .pipe($.clean());
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: config.dist.path
+    }
+  });
 });
 
 
@@ -88,10 +61,11 @@ gulp.task('styles', function() {
   // Concatenate vendor CSS, then compiled SASS, finally anything found in src/css
   return streamqueue({ objectMode: true }, cssPre, scss, cssPost)
     .pipe($.concat('site.css'))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest(config.dist.path + '/css'))
     .pipe($.rename({ suffix: '.min' }))
     .pipe($.minifyCss())
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest(config.dist.path + '/css'))
+    .pipe(reload({ stream: true }));
 });
 
 
@@ -102,10 +76,13 @@ gulp.task('scripts', function() {
   return gulp.src(config.src.js)
     // .pipe($.plumber(plumberErrorHandler))
     .pipe($.concat('site.js'))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest(config.dist.path + '/js'))
     .pipe($.uglify())
-    .pipe($.rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/js'));
+    .pipe($.rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(config.dist.path + '/js'))
+    .pipe(reload({ stream: true }));
 });
 
 
@@ -118,15 +95,16 @@ gulp.task('files', function() {
   });
 
   return merge(sources)
-    .pipe($.newer('dist'))
-    .pipe(gulp.dest('dist'));
+    .pipe($.newer(config.dist.path))
+    .pipe(gulp.dest(config.dist.path))
+    .pipe(reload({ stream: true }));
 });
 
 
 // ----------------------------------------------------------------------------
 // Watch for file changes
 
-gulp.task('watch', ['build'], function() {
+gulp.task('watch', ['build', 'browser-sync'], function() {
   // livereload.listen();
 
   var files = config.src.files.reduce(function(list, cur) {

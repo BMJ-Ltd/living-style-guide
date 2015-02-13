@@ -24,9 +24,10 @@
   },
   "devDependencies": {
     "breakpoint": "~>0.1.6",
+    "browser-sync": "^2.0.1",
+    "del": "^1.1.1",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "0.0.8",
-    "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.3.4",
     "gulp-debug": "^1.0.1",
     "gulp-load-plugins": "^0.5.3",
