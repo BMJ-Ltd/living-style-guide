@@ -10221,7 +10221,7 @@ body {
 }
 .topic .container {
     position: relative;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(0, 0, 0, 1);
 }
 .topic .container a {
     color: #fff;
