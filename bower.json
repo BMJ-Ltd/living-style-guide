@@ -1,8 +1,8 @@
 {
-  "name": "ux-prototypes",
+  "name": "living-style-guide",
   "version": "0.1.0",
-  "description": "Home for BMJ UX Prototypes",
-  "homepage": "https://github.com/BMJ-Ltd/ux-prototyping",
+  "description": "BMJ Living Style Guide",
+  "homepage": "https://github.com/BMJ-Ltd/living-style-guide",
   "authors": [
     "Amy Asante <aasante@bmj.com>",
     "James Skinner <jskinner@bmj.com> (https://github.com/james-skinner)"

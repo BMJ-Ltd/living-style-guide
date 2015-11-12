@@ -368,13 +368,13 @@ body {
 }
 .topic h3 {
     margin-top: 30px;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     font-size: 28px;
     font-weight: normal;
 }
 .topic h4 {
     margin-top: 15px;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 1);
     font-weight: normal;
 }
 .topic .topic__infos {
@@ -382,12 +382,12 @@ body {
     bottom: 0;
     padding-bottom: 15px;
     padding-top: 14px;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.45);
     width: 100%;
 }
 .topic .container {
     position: relative;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(0, 0, 0, 1);
 }
 .topic .container a {
     color: #fff;
