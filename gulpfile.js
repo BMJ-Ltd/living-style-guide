@@ -59,7 +59,7 @@ gulp.task('styles', function() {
     cssPost = gulp.src(config.src.css.postSass);
 
   // Concatenate vendor CSS, then compiled SASS, finally anything found in src/css
-  return streamqueue({ objectMode: true }, cssPre, scss, cssPost)
+  return streamqueue({ objectMode: true }, cssPre, scss)
     .pipe($.concat('site.css'))
     .pipe(gulp.dest(config.dist.path + '/css'))
     .pipe($.rename({ suffix: '.min' }))

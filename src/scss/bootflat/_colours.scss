@@ -1,0 +1,36 @@
+/* Scss Document */
+.colour-palette {
+    color: rgba(255,255,255,0.87);
+    font-weight: 500;
+}
+
+.colour-palette .dark {
+    color: rgba(0,0,0,0.87);
+}
+.colour-palette .light-strong {
+    color: #fff;
+}
+.colour-palette .colour-group ul {
+	padding-left: 0;	
+	
+}
+.colour-palette .colour-group li, .colour-palette .colour-group:last-child li {
+	list-style-type: none;	
+	padding: 15px;
+	
+}
+.colour-palette .colour-group li.main-colour .name, .colour-palette .colour-group:last-child li.main-colour .name {
+    display: block;
+    margin-bottom: 60px;
+}
+.colour-palette .light-strong {
+    color: #fff;
+}
+.colour-palette .colour-group li.colour .hex, .colour-palette .colour-group:last-child li.colour .hex {
+    float: right;
+    text-transform: uppercase;
+}
+.colour-palette .colour-group li.divide, .colour-palette .colour-group:last-child li.divide {
+	border-top: 4px solid #ffffff;
+	
+}

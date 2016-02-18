@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BMJ Living Style Guide</title>
+<!-- Sets initial viewport load and disables zooming  -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- SmartAddon.com Verification -->
+<meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="bookmark" href="favicon.ico"/>
+<!-- site css -->
+<link rel="stylesheet" href="css/site.min.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="js/site.min.js"></script>
+</head>
+<body id="typography">
+<div class="docs-header"> 
+  <!--nav-->
+  <nav class="navbar navbar-default navbar-custom" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="40"></a> </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="nav-link" href="getting-started.html">Getting Started</a></li>
+          <li><a class="nav-link current" href="colour.html">Colour</a></li>
+          <li><a class="nav-link" href="components.html">Components</a></li>
+          <li><a class="nav-link" href="typography.html">Typography Guide</a></li>
+          <li><a class="nav-link" href="code-centre.html">BMJ Code Centre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header-->
+  <div class="topic">
+    <div class="container">
+      <h1>BMJ Living Style Guide <sup>BETA</sup> </h1>
+      <h2 class="example-title">The online visual language and front end framework for BMJ</h2>
+    </div>
+    <div class="topic__infos">
+      <div class="container"> This page gives all BMJ colleagues our online colour palettes and a guide to how to use them.</div>
+    </div>
+  </div>
+</div>
+<!--documents-->
+<div class="container documents"> 
+  <!-- Color Swatches
+      ================================================== -->
+  
+  <div class="example">
+    <h1>BMJ Colour Palette</h1>
+    <p>This colour palette comprises primary and accent colors that can be used for all digital design. They’ve been designed to work harmoniously with each other.</p>
+    <p>The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS. The BMJ Design Team suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.</p>
+    <h2 class="example-title">Primary Colour Palette</h2>
+    <div class="colour-palette">
+      <div class="row">
+        <div class="col-md-4">
+          <section class="colour-group">
+            <ul>
+              <li class="colour main-colour" style="background-color: #2a6ebb;"> <span class="name light-strong">BMJ Blue</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#f44336</span> </li>
+             <li class="colour dark" style="background-color: #f2f7fc;"><span class="shade expanded">50</span><span class="hex">#f2f7fc</span></li>
+             <li class="colour dark" style="background-color: #b4cfee;"><span class="shade">100</span><span class="hex">#b4cfee</span></li>
+             <li class="colour dark" style="background-color: #86b2e4"><span class="shade expanded">200</span><span class="hex">#86b2e4</span></li>
+             <li class="colour dark" style="background-color: #4c8dd7;"><span class="shade">300</span><span class="hex">#4c8dd7</span></li>
+             <li class="colour" style="background-color: #337dd1;"><span class="shade expanded">400</span><span class="hex">#337dd1</span></li>
+             <li class="colour" style="background-color: #2a6ebb;"><span class="shade">500</span><span class="hex">#2a6ebb</span></li>
+             <li class="colour" style="background-color: #245fa2;"><span class="shade expanded">600</span><span class="hex">#245fa2</span></li>
+             <li class="colour" style="background-color: #1f5189;"><span class="shade">700</span><span class="hex">#1f5189</span></li>
+             <li class="colour" style="background-color: #194270;"><span class="shade expanded">800</span><span class="hex">#194270</span></li>
+             <li class="colour" style="background-color: #143357;"><span class="shade expanded">900</span><span class="hex">#143357</span></li>
+             <li class="colour dark divide" style="background-color: #f2f7fc;"><span class="shade accent">A100</span><span class="hex">#f2f7fc</span></li>
+              <li class="colour light-strong" style="background-color: #b4cfee;"><span class="shade accent expanded">A200</span><span class="hex">#b4cfee</span></li>
+              <li class="colour" style="background-color: #337dd1;"><span class="shade accent expanded">A400</span><span class="hex">#337dd1</span></li>
+              <li class="colour" style="background-color: #1f5189;"><span class="shade accent">A700</span><span class="hex">#1f5189</span></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section class="colour-group">
+            <ul>
+              <li class="colour main-colour" style="background-color: #747678;"> <span class="name light-strong">BMJ Grey</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#747678</span> </li>
+              <li class="colour dark" style="background-color: #fbfbfb;"><span class="shade expanded">50</span><span class="hex">#fbfbfb</span></li>
+              <li class="colour dark" style="background-color: #d4d4d5;"><span class="shade">100</span><span class="hex">#d4d4d5</span></li>
+              <li class="colour dark" style="background-color: #b7b8b9"><span class="shade expanded">200</span><span class="hex">#b7b8b9</span></li>
+              <li class="colour dark" style="background-color: #939596;"><span class="shade">300</span><span class="hex">#939596</span></li>
+              <li class="colour" style="background-color: #838587;"><span class="shade expanded">400</span><span class="hex">#838587</span></li>
+              <li class="colour" style="background-color: #747678;"><span class="shade">500</span><span class="hex">#747678</span></li>
+              <li class="colour" style="background-color: #656768;"><span class="shade expanded">600</span><span class="hex">#656768</span></li>
+              <li class="colour" style="background-color: #565759;"><span class="shade">700</span><span class="hex">#565759</span></li>
+              <li class="colour" style="background-color: #474849;"><span class="shade expanded">800</span><span class="hex">#474849</span></li>
+              <li class="colour" style="background-color: #38393a;"><span class="shade expanded">900</span><span class="hex">#38393a</span></li>
+              <li class="colour dark divide" style="background-color: #fbfbfb;"><span class="shade accent">A100</span><span class="hex">#fbfbfb</span></li>
+              <li class="colour light-strong" style="background-color: #d4d4d5;"><span class="shade accent expanded">A200</span><span class="hex">#d4d4d5</span></li>
+              <li class="colour" style="background-color: #838587;"><span class="shade accent expanded">A400</span><span class="hex">#838587</span></li>
+              <li class="colour" style="background-color: #565759;"><span class="shade accent">A700</span><span class="hex">#565759</span></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section class="colour-group">
+            <ul>
+              <li class="colour" style="background-color: #333333;"><span class="shade accent">Dark Grey (Black subsitute)</span><span class="hex">#333333</span></li>
+              <li class="colour dark" style="background-color: #ffffff;"><span class="shade accent expanded">White</span><span class="hex">#ffffff</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="example-title">Secondary/Accent Colours</h2>
+        <div class="colour-palette">
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #f0ab00;"> <span class="name light-strong">BMJ Yellow</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#f0ab00</span> </li>
+                <li class="colour dark" style="background-color: #fffefa;"><span class="shade expanded">50</span><span class="hex">#fffefa</span></li>
+                <li class="colour dark" style="background-color: #ffe8ae;"><span class="shade">100</span><span class="hex">#ffe8ae</span></li>
+                <li class="colour dark" style="background-color: #ffd776"><span class="shade expanded">200</span><span class="hex">#ffd776</span></li>
+                <li class="colour dark" style="background-color: #ffc32e;"><span class="shade">300</span><span class="hex">#ffc32e</span></li>
+                <li class="colour dark" style="background-color: #ffba10;"><span class="shade expanded">400</span><span class="hex">#ffba10</span></li>
+                <li class="colour dark" style="background-color: #f0ab00;"><span class="shade">500</span><span class="hex">#f0ab00</span></li>
+                <li class="colour dark" style="background-color: #d19500;"><span class="shade expanded">600</span><span class="hex">#d19500</span></li>
+                <li class="colour dark" style="background-color: #b37f00;"><span class="shade">700</span><span class="hex">#b37f00</span></li>
+                <li class="colour" style="background-color: #946a00;"><span class="shade expanded">800</span><span class="hex">#946a00</span></li>
+                <li class="colour" style="background-color: #765400;"><span class="shade expanded">900</span><span class="hex">#765400</span></li>
+                <li class="colour dark divide" style="background-color: #fffefa;"><span class="shade accent">A100</span><span class="hex">#fffefa</span></li>
+                <li class="colour dark" style="background-color: #ffe8ae;"><span class="shade accent expanded">A200</span><span class="hex">#ffe8ae</span></li>
+                <li class="colour dark" style="background-color: #ffba10;"><span class="shade accent expanded">A400</span><span class="hex">#ffba10</span></li>
+                <li class="colour dark" style="background-color: #b37f00;"><span class="shade accent">A700</span><span class="hex">#b37f00</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #e37222;"> <span class="name light-strong">BMJ Orange</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#e37222</span> </li>
+                <li class="colour dark" style="background-color: #ffffff;"><span class="shade expanded">50</span><span class="hex">#ffffff</span></li>
+                <li class="colour dark" style="background-color: #f8ddc9;"><span class="shade">100</span><span class="hex">#f8ddc9</span></li>
+                <li class="colour dark" style="background-color: #f2bd98"><span class="shade expanded">200</span><span class="hex">#f2bd98</span></li>
+                <li class="colour dark" style="background-color: #ea9558;"><span class="shade">300</span><span class="hex">#ea9558</span></li>
+                <li class="colour dark" style="background-color: #e6833d;"><span class="shade expanded">400</span><span class="hex">#e6833d</span></li>
+                <li class="colour dark" style="background-color: #e37222;"><span class="shade">500</span><span class="hex">#e37222</span></li>
+                <li class="colour" style="background-color: #cc641a;"><span class="shade expanded">600</span><span class="hex">#cc641a</span></li>
+                <li class="colour" style="background-color: #b15716;"><span class="shade">700</span><span class="hex">#b15716</span></li>
+                <li class="colour" style="background-color: #964913;"><span class="shade expanded">800</span><span class="hex">#964913</span></li>
+                <li class="colour" style="background-color: #7b3c10;"><span class="shade expanded">900</span><span class="hex">#7b3c10</span></li>
+                <li class="colour dark divide" style="background-color: #ffffff;"><span class="shade accent">A100</span><span class="hex">#ffffff</span></li>
+                <li class="colour dark" style="background-color: #f8ddc9;"><span class="shade accent expanded">A200</span><span class="hex">#f8ddc9</span></li>
+                <li class="colour dark" style="background-color: #e6833d;"><span class="shade accent expanded">A400</span><span class="hex">#e6833d</span></li>
+                <li class="colour" style="background-color: #b15716;"><span class="shade accent">A700</span><span class="hex">#b15716</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3">
+          <section class="colour-group">
+             <ul>
+                <li class="colour main-colour" style="background-color: #CD202C;"> <span class="name light-strong">BMJ Red</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#CD202C</span> </li>
+                <li class="colour dark" style="background-color: #FEF8F9;"><span class="shade expanded">50</span><span class="hex">#FEF8F9</span></li>
+                <li class="colour dark" style="background-color: #F4B6BA;"><span class="shade">100</span><span class="hex">#F4B6BA</span></li>
+                <li class="colour dark" style="background-color: #EC868D"><span class="shade expanded">200</span><span class="hex">#EC868D</span></li>
+                <li class="colour" style="background-color: #E24853;"><span class="shade">300</span><span class="hex">#E24853</span></li>
+                <li class="colour" style="background-color: #DE2D3A;"><span class="shade expanded">400</span><span class="hex">#DE2D3A</span></li>
+                <li class="colour" style="background-color: #CD202C;"><span class="shade">500</span><span class="hex">#CD202C</span></li>
+                <li class="colour" style="background-color: #B31C26;"><span class="shade expanded">600</span><span class="hex">#B31C26</span></li>
+                <li class="colour" style="background-color: #981821;"><span class="shade">700</span><span class="hex">#981821</span></li>
+                <li class="colour" style="background-color: #7E141B;"><span class="shade expanded">800</span><span class="hex">#7E141B</span></li>
+                <li class="colour" style="background-color: #630F15;"><span class="shade expanded">900</span><span class="hex">#630F15</span></li>
+                <li class="colour dark divide" style="background-color: #FEF8F9 ;"><span class="shade accent">A100</span><span class="hex">#FEF8F9 </span></li>
+                <li class="colour dark" style="background-color: #F4B6BA;"><span class="shade accent expanded">A200</span><span class="hex">#F4B6BA</span></li>
+                <li class="colour" style="background-color: #DE2D3A ;"><span class="shade accent expanded">A400</span><span class="hex"> #DE2D3A</span></li>
+                <li class="colour" style="background-color: #981821;"><span class="shade accent">A700</span><span class="hex">#981821</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #c50084;"> <span class="name light-strong">BMJ Pink</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#c50084</span> </li>
+                <li class="colour dark" style="background-color: #ffcfef;"><span class="shade expanded">50</span><span class="hex">#ffcfef</span></li>
+                <li class="colour dark" style="background-color: #ff83d6;"><span class="shade">100</span><span class="hex">#ff83d6</span></li>
+                <li class="colour dark" style="background-color: #ff4bc3"><span class="shade expanded">200</span><span class="hex">#ff4bc3</span></li>
+                <li class="colour" style="background-color: #ff03ac;"><span class="shade">300</span><span class="hex">#ff03ac</span></li>
+                <li class="colour" style="background-color: #e40098;"><span class="shade expanded">400</span><span class="hex">#e40098</span></li>
+                <li class="colour" style="background-color: #c50084;"><span class="shade">500</span><span class="hex">#c50084</span></li>
+                <li class="colour" style="background-color: #a6006f;"><span class="shade expanded">600</span><span class="hex">#a6006f</span></li>
+                <li class="colour" style="background-color: #88005b;"><span class="shade">700</span><span class="hex">#88005b</span></li>
+                <li class="colour" style="background-color: #690046;"><span class="shade expanded">800</span><span class="hex">#690046</span></li>
+                <li class="colour" style="background-color: #4b0032;"><span class="shade expanded">900</span><span class="hex">#4b0032</span></li>
+                <li class="colour dark divide" style="background-color: #ffcfef;"><span class="shade accent">A100</span><span class="hex">#ff83d6</span></li>
+                <li class="colour dark" style="background-color: #ff83d6;"><span class="shade accent expanded">A200</span><span class="hex">#f4b6ba</span></li>
+                <li class="colour" style="background-color: #e40098;"><span class="shade accent expanded">A400</span><span class="hex">#e40098</span></li>
+                <li class="colour" style="background-color: #88005b;"><span class="shade accent">A700</span><span class="hex">#88005b</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="colour-palette">
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #7d5cc6;"> <span class="name light-strong">BMJ Purple</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#7d5cc6</span> </li>
+                <li class="colour dark" style="background-color: #ffffff;"><span class="shade expanded">50</span><span class="hex">#ffffff</span></li>
+                <li class="colour dark" style="background-color: #ece8f7;"><span class="shade">100</span><span class="hex">#ece8f7</span></li>
+                <li class="colour dark" style="background-color: #cbbee8"><span class="shade expanded">200</span><span class="hex">#cbbee8</span></li>
+                <li class="colour dark" style="background-color: #a189d6;"><span class="shade">300</span><span class="hex">#a189d6</span></li>
+                <li class="colour dark" style="background-color: #8f73ce;"><span class="shade expanded">400</span><span class="hex">#8f73ce</span></li>
+                <li class="colour" style="background-color: #7d5cc6;"><span class="shade">500</span><span class="hex">#7d5cc6</span></li>
+                <li class="colour" style="background-color: #6b45be;"><span class="shade expanded">600</span><span class="hex">#6b45be</span></li>
+                <li class="colour" style="background-color: #5e3baa;"><span class="shade">700</span><span class="hex">#5e3baa</span></li>
+                <li class="colour" style="background-color: #513393;"><span class="shade expanded">800</span><span class="hex">#513393</span></li>
+                <li class="colour" style="background-color: #452b7c;"><span class="shade expanded">900</span><span class="hex">#452b7c</span></li>
+                <li class="colour dark divide" style="background-color: #ffffff;"><span class="shade accent">A100</span><span class="hex">#ffffff</span></li>
+                <li class="colour dark" style="background-color: #ece8f7;"><span class="shade accent expanded">A200</span><span class="hex">#ece8f7</span></li>
+                <li class="colour dark" style="background-color: #8f73ce;"><span class="shade accent expanded">A400</span><span class="hex">#8f73ce</span></li>
+                <li class="colour " style="background-color: #5e3baa;"><span class="shade accent">A700</span><span class="hex">#5e3baa</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #00b2a9;"> <span class="name light-strong">BMJ Aqua</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#00b2a92</span> </li>
+                <li class="colour dark" style="background-color: #bcfffc;"><span class="shade expanded">50</span><span class="hex">#bcfffc</span></li>
+                <li class="colour dark" style="background-color: #70fff8;"><span class="shade">100</span><span class="hex">#70fff8</span></li>
+                <li class="colour dark" style="background-color: #38fff5"><span class="shade expanded">200</span><span class="hex">#38fff5</span></li>
+                <li class="colour dark" style="background-color: #00efe3;"><span class="shade">300</span><span class="hex">#00efe3</span></li>
+                <li class="colour dark" style="background-color: #00d1c6;"><span class="shade expanded">400</span><span class="hex">#00d1c6</span></li>
+                <li class="colour" style="background-color: #00b2a9;"><span class="shade">500</span><span class="hex">#00b2a9</span></li>
+                <li class="colour" style="background-color: #00938c;"><span class="shade expanded">600</span><span class="hex">#00938c</span></li>
+                <li class="colour" style="background-color: #00756f;"><span class="shade">700</span><span class="hex">#00756f</span></li>
+                <li class="colour" style="background-color: #005652;"><span class="shade expanded">800</span><span class="hex">#005652</span></li>
+                <li class="colour" style="background-color: #003835;"><span class="shade expanded">900</span><span class="hex">#003835</span></li>
+                <li class="colour dark divide" style="background-color: #bcfffc;"><span class="shade accent">A100</span><span class="hex">#bcfffc</span></li>
+                <li class="colour dark" style="background-color: #70fff8;"><span class="shade accent expanded">A200</span><span class="hex">#70fff8</span></li>
+                <li class="colour dark" style="background-color: #00D1C6;"><span class="shade accent expanded">A400</span><span class="hex">#00D1C6</span></li>
+                <li class="colour" style="background-color: #00756f;"><span class="shade accent">A700</span><span class="hex">#00756f</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #69be28;"> <span class="name light-strong">BMJ Green</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#69be28</span> </li>
+                <li class="colour dark" style="background-color: #f7fcf3;"><span class="shade expanded">50</span><span class="hex">#f7fcf3</span></li>
+                <li class="colour dark" style="background-color: #cdefb4;"><span class="shade">100</span><span class="hex">#cdefb4</span></li>
+                <li class="colour dark" style="background-color: #afe585"><span class="shade expanded">200</span><span class="hex">#afe585</span></li>
+                <li class="colour dark" style="background-color: #88d94a;"><span class="shade">300</span><span class="hex">#88d94a</span></li>
+                <li class="colour dark" style="background-color: #77d431;"><span class="shade expanded">400</span><span class="hex">#77d431</span></li>
+                <li class="colour dark" style="background-color: #69be28;"><span class="shade">500</span><span class="hex">#69be28</span></li>
+                <li class="colour dark" style="background-color: #5ba523;"><span class="shade expanded">600</span><span class="hex">#5ba523</span></li>
+                <li class="colour" style="background-color: #4d8b1d;"><span class="shade">700</span><span class="hex">#4d8b1d</span></li>
+                <li class="colour" style="background-color: #3f7218;"><span class="shade expanded">800</span><span class="hex">#3f7218</span></li>
+                <li class="colour" style="background-color: #315913;"><span class="shade expanded">900</span><span class="hex">#315913</span></li>
+                <li class="colour dark divide" style="background-color: #f7fcf3;"><span class="shade accent">A100</span><span class="hex">#f7fcf3</span></li>
+                <li class="colour dark" style="background-color: #cdefb4;"><span class="shade accent expanded">A200</span><span class="hex">#cdefb4</span></li>
+                <li class="colour dark" style="background-color: #77d431;"><span class="shade accent expanded">A400</span><span class="hex">#77d431</span></li>
+                <li class="colour" style="background-color: #4d8b1d;"><span class="shade accent">A700</span><span class="hex">#4d8b1d</span></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-md-3"> </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="color-ui-color-application">
+      <h2 class="example-title"> UI color application </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Choose your palette</h3>
+          <div class="module-body">
+            <p>Limit your selection of colors by choosing three hues from the primary palette and one accent color from the secondary palette. </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="colour-palette">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #2a6ebb;"> <span class="name light-strong">BMJ Blue</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#2a6ebb</span> </li>
+                <li class="colour divide" style="background-color: #1f5189;"><span class="shade">700</span><span class="hex">#1f5189</span></li>
+                <li class="colour" style="background-color: #194270;"><span class="shade">800</span><span class="hex">#194270</span></li           
+                ><li class="colour main-colour dark divide" style="background-color: #00D1C6;"> <span class="name light-strong">Accent BMJ Aqua</span> <span class="shade light-strong">A400</span> <span class="hex light-strong">#00D1C6</span> </li>
+              </ul>
+            </section>
+          </div>
+          <p><strong>Example of a color palette using the 2 hues of BMJ Primary blue from the primary palette and one accent BMJ Aqua hue.</strong></p>
+        </div>
+        <div class="col-md-3">
+          <div class="colour-palette">
+           IMAGE HERE 
+          </div>
+          <p><strong>Put exmaple of UI color application on BMJ product here</strong></p>
+        </div>
+      </div>
+      
+     <div class="row">
+        <div class="col-md-6">
+          <h3>Primary color</h3>
+          <div class="module-body">
+            <p>When using a primary color in your palette, this color should be the most widely used across all screens and components. </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+         <div class="colour-palette">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #2a6ebb;"> <span class="name light-strong">BMJ Blue</span> <span class="shade light-strong">500</span> <span class="hex light-strong">#2a6ebb</span> </li>
+                <li class="colour dark" style="background-color: #b4cfee;"><span class="shade">100</span><span class="hex">#b4cfee</span></li>
+                <li class="colour" style="background-color: #2a6ebb;"><span class="shade">500</span><span class="hex">#2a6ebb</span></li>        
+                <li class="colour" style="background-color: #1f5189;"><span class="shade">700</span><span class="hex">#1f5189</span></li>
+              </ul>
+            </section>
+          </div>
+          <p><strong>Example of a primary color palette with variations for when a darker or lighter version of the color is needed</strong></p>
+        </div>
+        <div class="col-md-3">
+          <div class="colour-palette">
+           IMAGE HERE 
+          </div>
+          <p><strong>Put example of UI color application on BMJ product here</strong></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Secondary color</h3>
+          <div class="module-body">
+            <p>Palettes with a secondary color may use this color to indicate a related action or information. The secondary color may be a darker or lighter variation of the primary color.</p>
+            
+             <h3> Accent colour </h3>
+         
+         
+    <p>The accent should be used for the floating action button and interactive elements, such as:</p>
+   	<ul>
+    	<li>Text fields and cursors</li>
+        <li>Text selection</li>
+        <li>Progress bars</li>
+        <li>Selection controls, buttons, and sliders</li>
+        <li>Links</li>
+     </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+         <div class="colour-palette">
+            <section class="colour-group">
+              <ul>
+                <li class="colour main-colour" style="background-color: #FFBA10;"> <span class="name light-strong">Accent - BMJ Yellow</span> <span class="shade light-strong">A400</span> <span class="hex light-strong">#FFBA10</span> </li>
+                <li class="colour dark" style="background-color: #ffffff;"><span class="shade">Fallback</span><span class="hex">#ffffff</span></li>
+                <li class="colour dark" style="background-color: #FFE8AE;"><span class="shade">A200</span><span class="hex">#FFE8AE</span></li>        
+                <li class="colour" style="background-color: #B37F00;"><span class="shade">A700</span><span class="hex">#B37F00</span></li>
+              </ul>
+            </section>
+          </div>
+          <p><strong>
+Palettes with a secondary color may use this color to indicate a related action or information. The secondary color may be a darker or lighter variation of the primary color. Example of a secondary palette with variations for when a darker or lighter version of the color is needed</strong></p>
+        </div>
+        <div class="col-md-3">
+         
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-md-12"><i><h1 style="color: rgba(0,0,0,0.54)">Add in examples of how to use accent colours here</h1></i></div>
+      
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+<!--footer-->
+</div>
+<!--/footer --> 
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48721682-1', 'bootflat.github.io');
+	  ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
