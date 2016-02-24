@@ -5,10 +5,11 @@ body {
 /* ----------------------------------
  * home
  * ---------------------------------- */
-
 .home {
     background: url(../img/index.png) no-repeat 50% 100px;
 }
+
+
 
 @media (max-width: 767px) {
     .home {
@@ -174,12 +175,13 @@ body {
     padding: 20px 0 14px;
     max-width: 900px;
     font-size: 28px;
+	color:#333;
 }
 .desc .desc__introduces p {
     padding-bottom: 40px;
     max-width: 900px;
     font-size: 18px;
-    color: #888;
+    color: #333;
 }
 .desc .desc__introduces .photo--responsive img {
     width: 100%;
@@ -462,6 +464,54 @@ body {
     border: none;
     background-color: #f7f7f7;
 }
+
+/* ----------------------------------
+ * example text box
+ * ---------------------------------- */
+ figure.example.do {
+	border-bottom: 15px solid #69BE28;
+}
+
+figure.example.dont {
+	border-bottom: 15px solid #CD202C;
+
+}
+
+figure.example.dont .caption-title {
+		color: #CD202C;
+	}
+
+ .text-box {
+	background-color: #fff;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    padding: 24px;	 }
+/* ----------------------------------
+ * table styling
+ * ---------------------------------- */	 
+data-table table {
+    background-color: #fff;
+    font-size: 13px;
+    table-layout: auto;
+}
+.data-table table tr:first-child {
+    background-color: #FAFAFA;
+    font-weight: 500;
+}
+.data-table table tr:first-child td {
+    color: #757575;
+    border-top: 1px solid #E5E5E5;
+}
+.data-table table tr td:last-child {
+    border-right: 1px solid #E5E5E5;
+}
+.data-table table td {
+    border: 1px solid #eee;
+    line-height: 24px;
+    padding: 12px 12px 12px 24px;
+    color: #212121;
+}
+
 /* ----------------------------------
  * example
  * ---------------------------------- */

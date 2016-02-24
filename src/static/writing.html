@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Getting Started - Bootflat</title>
+<!-- Sets initial viewport load and disables zooming  -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- SmartAddon.com Verification -->
+<meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="bookmark" href="favicon.ico"/>
+<!-- BMJ CORE CSS -->
+<link rel="stylesheet" href="css/site.min.css">
+<!-- SITE SPECIFIC CSS-->
+<link rel="stylesheet" href="css/styles.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/site.min.js"></script>
+</head>
+<body>
+<div class="docs-header"> 
+  <!--nav-->
+  <nav class="navbar navbar-default navbar-custom" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="40"></a> </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="nav-link current" href="getting-started.html">Getting Started</a></li>
+          <li><a class="nav-link" href="components.html">Components</a></li>
+          <li><a class="nav-link" href="typography.html">Typography Guide</a></li>
+          <li><a class="nav-link" href="code-centre.html">BMJ Code Centre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header-->
+  <div class="topic">
+    <div class="container">
+      <h1>BMJ Living Style Guide <sup>BETA</sup> </h1>
+      <h2>The online visual language and front end framework for BMJ</h2>
+      <!--           <div class="advertisement">
+            <span class="advertisement-image">
+              <img src="" title="bootflat" alt="bootflat" border="0" height="90">
+            </span>
+            <p class="advertisement-text"></p>
+          </div> --> 
+    </div>
+  </div>
+</div>
+<!--documents-->
+<div class="container documents">
+  <div class="row">
+    <div class="col-md-12">
+    <!-- Overview
+          ================================================== -->
+    <section class="grid_outer chapter">
+      <h1 class="chapter-title">Writing </h1>
+      <div class="chapter-content">
+        <div class="chapter-intro">
+          <p>Clear, accurate, and concise text makes interfaces more usable and builds trust. Strive to write text that is understandable by anyone, anywhere, regardless of their culture or language.</p>
+          <p>In addition to these guidelines, be sure to consult guidelines for specific UI elements, such as <a href="/design/spec/patterns/errors.html">Errors</a>, <a href="/design/spec/components/dialogs.html">Dialogs</a>, <a href="/design/spec/patterns/settings.html">Settings</a>, and <a href="/design/spec/patterns/data-formats.html">Data formats</a></p>
+        </div>
+        <nav class="chapter-toc">
+          <h1>Contents</h1>
+          <ul>
+            <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#writing-language" data-qp-ui-data-id="qp:f">Language </a></li>
+            <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#writing-tone" data-qp-ui-data-id="qp:g">Tone </a></li>
+            <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#writing-capitalization-punctuation" data-qp-ui-data-id="qp:h">Capitalization &amp; punctuation </a></li>
+            <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="#writing-global-writing" data-qp-ui-data-id="qp:i">Global writing </a></li>
+          </ul>
+        </nav>
+        <div class="article-list">
+          <h2 class="article-title"> Language</h2>
+          <div class="article-content">
+           
+          
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Speak to the user as “you”</h3>
+                  
+                    <p>Speak directly to users as “you,” not “me.” Don’t put words in the users’ mouths, with phrases that use “I” or “my.”</p>
+                    <p>Exceptions include:</p>
+                    <ul>
+                      <li>Some legal opt-ins: “I agree to follow the UX Writing Guidelines.”</li>
+                      <li>Some Google Play categories, such as "My music" or "My books"</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                 
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Your account</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>My account</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                 </div>
+               
+                </section>
+             
+            <hr>
+            
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Don’t refer to “we”</h3>
+                 
+                    <p>Focus on the user and what they can do with your app, rather than what you or your app is doing for the user.</p>
+                  </div>
+                 
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+              
+                          <div class="text-box">
+                            <p><span>Get started with these popular posts on Google+.</span></p>
+                          </div>
+               
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                       <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>To get you started, we’re showing you popular posts on Google+.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                  
+                
+                </section>
+         
+               <section class="row">
+                <div class="col-md-6">
+                    <p>One exception is when a human actually does take action for a user, such as reviewing an appeal or responding to a suggestion. Here, the use of “we” is appropriate and more personable.</p>
+                  </div>
+               
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>We’ll review your appeal and respond within a few days.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                        <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Your appeal will be reviewed, and you will receive a response within a few days.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+           <hr>
+          
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be concise</h3>
+                  <div class="module-body">
+                    <p>The best UI text is written in small, scannable segments to assist in navigation and discovery. </p>
+                  </div>
+                  </div>
+                
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Send money to anyone in the US who has an email address. It’s fast, easy, and free.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Send (and receive) money with friends and family in the US with an email address. It’s a two-step process with little-to-no latency and there aren’t any charges for the recipients of the money.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+              
+                </section>
+           
+              <div>
+                <section class="row">
+                  <div class="col-md-6">
+                    <p>Keep your sentences and phrases short, with as few concepts as possible.</p>
+                  </div>
+               
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Read the instructions that came with your phone.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Consult the documentation that came with your phone for further instructions.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                 
+                </section>
+              </div>
+         <hr>
+       
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Write in the present</h3>
+                  <div class="module-body">
+                    <p>Use the present tense to describe product behavior. Avoid using future tense to describe the way a product always acts. </p>
+                    <p>When you need to write in the past or future, use simple verb forms.</p>
+                  </div>
+                  </div>
+                 
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Message sent</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Message has been sent</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+          <hr>
+             
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Write simply and directly</h3>
+                  <div class="module-body">
+                    <p>Use &nbsp;simple, direct language that is easy for users to understand.</p>
+                  </div>
+                  </div>
+                 
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Save changes?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Would you like to save your changes?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                
+                </section>
+                <hr>
+            
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Use simple words that everyone knows</h3>
+                  <div class="module-body">
+                    <p>When choosing among synonyms, pick the simplest word.</p>
+                  </div>
+                  </div>
+                  
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Turn on Location History</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Enable Location History</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                 
+                </section>
+              
+          
+                <section class="row">
+                  <div class="col-md-6">
+                    <p>Avoid terms that only industry insiders know, and don't rely on the names invented for UI features.</p>
+                  </div>
+                 
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Preparing video…</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Buffering…</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                 
+                </section>
+             
+             
+          
+                <section class="row">
+                  <div class="col-md-6"> </div>
+               
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>“Ok Google” isn’t supported on your phone</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>“Ok Google” is only supported on dual-core devices</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+            
+         
+                <section class="row">
+                  <div class="col-md-6">
+                    <p>Generic terms like "slider" and "menu" are fine, but direct users to the labels on UI elements, not the kind of element (such as menu or button).</p>
+                  </div>
+                  
+                 
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Click Continue</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Click the Continue button</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                
+                </section>
+           
+           
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Omit unnecessary phrases</h3>
+                  <div class="module-body">
+                    <p>You can skip many common introductory phrases and get right to the point.</p>
+                  </div>
+                  </div>
+           
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Delete this photo?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Are you sure you want to delete this photo?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                
+                </section>
+          
+           
+                <section class="row">
+                  <div class="col-md-6"> </div>
+               
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Register to vote</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>You must register before you can vote</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+            
+               <section class="row">
+                  <div class="col-md-6"> </div>
+               
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Want to…</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Do you want to…</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                 
+                </section>
+            
+             <hr>
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Use consistent verbs across the arc of an action</h3>
+                  <div class="module-body">
+                    <p>The framing concept of an action is typically a verb. Pick one and use it consistently across the micro-narrative of an action.</p>
+                  </div></div>
+             
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Remove photo</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                          <p>Menu item</p>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Delete photo</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                          <p>Menu item</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+            
+                </section>
+            
+            
+            
+            
+         
+                <section class="row">
+                  <div class="col-md-6"> </div>
+                 
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Remove photo?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                          <p>Dialog title</p>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Remove photo from page?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                          <p>Dialog title</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+             
+                </section>
+           
+        
+                <section class="row">
+                  <div class="col-md-6"> </div>
+              
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Remove this photo from this page?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                          <p>Dialog text</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="col-md-3"></div>
+              
+                </section>
+           
+          
+                <section class="row">
+                  <div class="col-md-6"> </div>
+                 
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Cancel | Remove</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                          <p>Dialog buttons</p>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Cancel | OK</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                          <p>Dialog buttons</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+           
+                </section>
+            <hr>
+         
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Lead with the goal, not the method</h3>
+                  <div class="module-body">
+                    <p>If a sentence includes an action for the user to take and instructions for achieving it, start the sentence with that action.</p>
+                  </div></div>
+               
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>To remove a photo from this album, drag it to the trash</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Drag a photo to the trash to remove it from this album</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                
+                </section>
+           <hr>
+       
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Reveal detail only as needed</h3>
+                  <div class="module-body">
+                    <p>Don’t burden the user with every detail and caution in the first interaction. Reveal increasing detail about features as the user explores them and needs the information. </p>
+                  </div></div>
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Remove downloaded book?</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Are you sure you want to remove this downloaded book? You won’t be able to access it unless you’re online.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+           
+                </section>
+            
+            
+          <hr>  
+            
+          
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Never say “never” </h3>
+                  <div class="module-body">
+                    <p>Avoid “never” and other absolutes.</p>
+                  </div>
+                  </div>
+                 
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Your circle names aren’t shared</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>We’ll never share your circle names</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+       <hr>
+           
+                <section class="row">
+                <div class="col-md-12">
+                  <h3>Text for buttons and related elements</h3>
+              
+                  </div>
+                </section>
+           
+          
+                <section class="row">
+                   <div class="col-md-6">
+                    <p>Buttons appear in <a href="/design/spec/components/buttons.html#buttons-flat-raised-buttons">dialogs</a> and as blue or underlined text. </p>
+                  </div>
+                 
+                    <div class="col-md-6">
+                      <figure class="">
+                        <div class="module-body data-table">
+                          <div class="table-box">
+                            <table class="c16">
+                              <tbody>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Button</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Usage</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>[&nbsp;Action&nbsp;]</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>See above guideline about using consistent verbs.</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Back</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Allows multi-step processes</span></p></td>
+                                </tr>
+                                <tr class="c12">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Cancel</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Cancels an action</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Dismiss</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Causes a message or dialog to disappear without any consequences</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Done</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Confirms the completion of a multi-step process</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Got it</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Causes a message or dialog to disappear without any consequences (similar to OK)</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Learn&nbsp;more</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Takes the user to additional content</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Next</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Takes the user to the next step of a multi-step process</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>No thanks</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Allows a user to decline</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Not&nbsp;now</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Don’t use this abused phrase except in rare cases where the call to action in the dialog is essential to the functionality of the product, for legal reasons, or for another urgent reason. <br>
+                                      Do not use “Not now” as a mechanism to avoid providing a “No thanks” option.</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>OK</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Allows the user to confirm an action that’s relevant to the task at hand</span></p></td>
+                                </tr>
+                                <tr class="c11">
+                                  <td class="c13" colspan="1" rowspan="1"><p><span>Skip</span></p></td>
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Gives the user a way to avoid an interruption and proceed with a task </span></p></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                
+                </section>
+          
+            </div>
+          </div>
+        </div>
+        <div id="writing-tone" class="article">
+          <h2 class="article-title"> Tone </h2>
+          <div class="article-content">
+            <div class="module-list">
+       
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be friendly, respectful, and focus on the user</h3>
+                  <div class="module-body">
+                    <p>Text in your UI should complement your visual UI:  intuitive, efficient, casual, and trustworthy. Charm peeks through, but never upstages the user. </p>
+                  </div>
+                  </div>
+                 
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><strong>MyApp isn’t responding </strong></p>
+                            <p>Do you want to close it?</p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><strong>Sorry! </strong></p>
+                            <p>Activity in MyAppActivity (in the &nbsp;MyApp app) is not responding</p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+              
+                </section>
+         <hr>
+         
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be humble</h3>
+                  <div class="module-body">
+                    <p>Don’t brag or over-promise. Reveal what a feature does, don’t say how great it is.</p>
+                  </div>
+                  </div>
+                  
+                   <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>All your savings in one place</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Great deals at places you’ll love</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                 
+                </section>
+          
+          
+                <section class="row">
+                  <div class="col-md-6"> </div>
+                
+                    <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>More restaurant reviews</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>All restaurant reviews</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+              
+                </section>
+             
+           
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be inviting</h3>
+                  <div class="module-body">
+                    <p>Focus on the benefits of each feature. Omit implementation details, caveats, and restrictions at the entry points to features (buttons, menu items, links, and promotions).</p>
+                  </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>To save power, switch Location mode to Battery saving mode.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Manually control GPS to prevent other apps from using it.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+          <hr>    
+          
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be positive</h3>
+                  <div class="module-body">
+                    <p>Present information in a positive light: it’s reassuring. </p>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Use 24 characters or fewer for file names.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure></div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Your file name must be less than 25 characters.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+               
+                </section>
+        
+        
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Be essential</h3>
+                  <div class="module-body">
+                    <p>For every message, ask yourself: does the user really need to know this? Err on the side of letting users stay focused on their own tasks. Sometimes the most effective UI is no text at all.</p>
+                    <p>Avoid messages that suggest that it’s surprising or unusual that a user’s simple action was successful.</p>
+                  </div></div>
+                  
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><strong>Signing in... </strong></p>
+                            <p>Your phone is contacting Google. This can take up to five minutes.</p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><strong>Signing in... </strong></p>
+                            <p>Your phone needs to communicate with Google servers to sign in to your account. This may take up to five minutes.</p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+            
+                </section>
+       
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div id="writing-capitalization-punctuation" class="article">
+          <h2 class="article-title"> Capitalization &amp; punctuation </h2>
+          <div class="article-content">
+            <div class="module-list">
+       
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Use sentence-style caps </h3>
+                  <div class="module-body">
+                    <p>Use sentence-style caps for all titles, headings, labels, menu items – any place where you might be tempted to use “Title-Style Caps.” </p>
+                    <p>Avoid ALL-CAPS except where the material spec requires them, for example, the Button style.</p>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Search settings</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Search Settings</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+             
+                </section>
+            
+    
+                <section class="row">
+                  <div class="col-md-6"> </div>
+                  <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>SEARCH SETTINGS</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3"></div>
+                
+                </section>
+         
+          
+                <section class="row">
+                	<div class="col-md-6">
+                  <h3>capitalise product names only when referring to a product as a product </h3>
+                  <div class="module-body">
+                    <p>Don’t capitalise the things you create or work with when using that product.</p>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Visit our Google+ page.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      </div>
+                      <div class="col-md-3">
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Visit our Google+ Page.</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+           
+                </section>
+          <hr>
+          
+                <section class="row">
+                <div class="col-md-6">
+                  <h3>Skip periods and other unnecessary punctuation &nbsp;</h3>
+                  <div class="module-body">
+                    <p>For labels, hover text, setting labels, stacks of links, promos, and so on, avoid periods. This gives you the flexibility to mix sentences and sentence fragments, for example, in lists. It also reduces visual clutter and helps readers parse your text at a glance. Skip the colon after UI labels (“Share with” not “Share with:”).</p>
+                    <p>Use a period or force fragments into full sentences where: &nbsp;</p>
+                    <ul>
+                      <li>You need to use more than one sentence – even if they’re short sentences.</li>
+                      <li>You have a set of parallel labels where one of the set must be a sentence. Make them all full sentences and use periods (or question marks, etc.).</li>
+                      <li>The sentence is part of a larger, more formal UI element, such as body text in a dialog.</li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="col-md-3"> </div>
+                  <div class="col-md-3"> </div>
+                
+                </section>
+              </div>
+              <div>
+                <section class="row">
+                  <h3>Use contractions &nbsp;</h3>
+                  <div class="module-body">
+                    <p>Don't make a sentence harder to understand just to follow this rule. For example, "do not" can give more emphasis than "don't" when you really mean it.</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>it’s, can’t, wouldn’t, you’re, you’ve, haven’t, don’t</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>it is, cannot, would not, it’ll, should’ve</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div>
+                <section class="row">
+                  <h3>Avoid exclamation points &nbsp;</h3>
+                  <div class="module-body">
+                    <p>Ask yourself, would someone shout (exclaim) that?</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Welcome!</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Learn about the new features of Calendar!</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div>
+                <section class="row">
+                  <div class="module-body"> </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>Good job!</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div>
+                <section class="row">
+                  <h3>“1, 2, 3” not “one, two, three” </h3>
+                  <div class="module-body">
+                    <p>Use numerals in place of words for numbers. </p>
+                    <p>One exception is when mixing uses of numbers: "Enter two 3s."</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="text-example example do">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>You have 3 messages</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Do.</div>
+                        </figcaption>
+                      </figure>
+                      <figure class="text-example example dont">
+                        <div class="module-body">
+                          <div class="text-box">
+                            <p><span>You have three messages</span></p>
+                          </div>
+                        </div>
+                        <figcaption>
+                          <div class="caption-title">Don't.</div>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div>
+                <section class="row">
+                  <h3>Punctuation</h3>
+                  <div class="module-body">
+                    <p>Omit punctuation after phrases and labels to create a cleaner and more readable interface.</p>
+                    <p>Use punctuation to add clarity or be grammatically correct.</p>
+                  </div>
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure class="">
+                        <div class="module-body data-table">
+                          <div class="table-box">
+                            <table cellpadding="0" cellspacing="0" class="c14">
+                              <tbody>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><span>Glyph/character</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Description</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Periods</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>.</strong></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Omit for fragments and single sentences in affordances like toasts, snackbars, butterbars, and labels. Do punctuate full sentences in body text, for example, in the body of dialogs. &nbsp;</span></p>
+                                    <p><span>Place inside quotation marks (unless you’re telling the reader what to enter and it’s ambiguous whether to include the period). </span></p></td>
+                                </tr>
+                                <tr class="c8">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Commas</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>,</strong></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Place inside of quotation marks.</span></p>
+                                    <p><span>Use the serial comma.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Exclamation points</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>!</strong></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Avoid exclamation points for anything you wouldn’t actually shout out loud (exclaim).</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Colons</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>: </strong></p>
+                                    <p><span>&amp;#58; or \u003A</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Omit from labels, for example, in the labels for fields in a form.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Quotation marks</span></p>
+                                    <p><span>&nbsp;</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><span>“ &amp;ldquo; or \u201C</span></p>
+                                    <p><span>” &amp;rdquo; or \u201D</span></p>
+                                    <p><span>‘ &amp;lsquo; or \u2018</span></p>
+                                    <p><span>’ &amp;rsquo; or \u2019</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use real quotation marks, not the inch and foot symbols.</span></p>
+                                    <p><span>The right single quotation mark symbol is also used for apostrophes.</span></p>
+                                    <p><span>Never use the generic quotes ", ' or free-standing accents `, ´ (\u0022, \u0027, \u0060, \u00B4). These are never right for quotation marks, apostrophes, or primes.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Primes</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><span>&amp;prime; or \u2032</span></p>
+                                    <p><span>and </span></p>
+                                    <p><span>&amp;Prime; or \u2033</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use prime (′) only in abbreviations for feet, arcminutes, and minutes. For example: 3° 15′</span></p>
+                                    <p><span>Use double-prime (″) only in abbreviations for inches, arcminutes, and minutes. For example: 3° 15′ 35″</span></p>
+                                    <p><span>Do not use generic quotes ", ' or free-standing accents `, ´ for primes.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Ellipses </span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>&nbsp;… </strong></p>
+                                    <p><span>Option-; <br>
+                                      &amp;hellip;</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use to indicate an action in progress ("Downloading…") or incomplete or truncated text. No space before the ellipses.</span></p>
+                                    <p><span>Omit from menu items or buttons that open a dialog or start some other process.</span></p>
+                                    <p><span>Midline ellipses (three-bullet glyphs) are also used to represent numeric truncation and the redaction of sensitive data, such as credit cards.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Double angle brackets</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><span>&nbsp;&gt;&gt;, &lt;&lt;</span><strong>&nbsp;</strong><span>&amp;laquo; or \u00AB</span></p>
+                                    <p><span>&amp;raquo; or \u00BB</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Omit from links or buttons that open another page or move to the next or previous step in a process.</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Em dash</span></p>
+                                    <p><span>&nbsp;</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>— </strong></p>
+                                    <p><span>&amp;mdash; or \u2014</span></p>
+                                    <p><span>Shift+Option -</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Avoid using em dashes. </span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>En dash </span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>– </strong></p>
+                                    <p><span>&amp;ndash; or \u2013</span></p>
+                                    <p><span>Option+ -</span></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use an en dash instead of a hyphen to indicate a range, without spaces (in English). </span></p>
+                                    <p><span>Avoid using dashes to separate text. If you must use dashes for this purpose – like this – use an en dash surrounded by spaces.</span></p>
+                                    <p><span>Example of use with a range:<br>
+                                      8:00 AM–12:30 PM<br>
+                                      3–5 kg</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Hyphen</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>- </strong></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use hyphens to avoid ambiguity in compound adjective-noun or noun-participle pairs and in some prefixes. </span></p>
+                                    <p><span>For example: </span></p>
+                                    <p><span>anti-inflammatory<br>
+                                      5-mile walk</span></p></td>
+                                </tr>
+                                <tr class="c18">
+                                  <td class="c10" colspan="1" rowspan="1"><p><span>Parentheses</span></p></td>
+                                  <td class="c21" colspan="1" rowspan="1"><p><strong>( &nbsp;)</strong></p></td>
+                                  <td class="c9" colspan="1" rowspan="1"><p><span>Use parentheses only to define acronyms or jargon.</span></p>
+                                    <p><span>For example:<br>
+                                      “Secure web connections are based on a technology called SSL (the secure sockets layer).”</span></p></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+    </section>
+  </div>
+</div>
+</div>
+<!--footer--> 
+
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48721682-1', 'bootflat.github.io');
+	  ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
