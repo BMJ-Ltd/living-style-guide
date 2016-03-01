@@ -51,37 +51,34 @@ body {
     background-color: rgba(255, 255, 255, .9);
     min-height: 650px;
 }
-.index h2 {
-    margin-top: 10px;
-    color: rgba(0, 0, 0, .8);
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: normal;
-}
 .index h1 {
-	font-size: 5rem;
-	line-height: 5.2rem;
+    color: rgba(0, 0, 0, .8);
+	max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.index h2 {
+    color: rgba(0, 0, 0, .6);
+	max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .index h3 {
-    margin-top: 20px;
-    font-size: 14px;
     font-style: italic;
+	max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+	color: rgba(0,0,0,.3)
 }
 .index .download-link {
     margin: 40px 0 20px;
 }
-.index .download-link .btn {
-    padding: 15px 35px;
-    border: 0;
-    font-size: 22px;
-    opacity: 1;
-}
+
 .index .version-text {
     color: rgba(0, 0, 0, .6);
-    font-size: 12px;
 }
 .index .learn-more {
-    margin-top: 20px;
     font-weight: bold;
     color: rgba(79, 190, 186, 1);
 }
@@ -91,10 +88,7 @@ body {
     color: #50c1e9 !important;
     text-decoration: none;
 }
-.index .learn-more .icon {
-    font-weight: bold;
-    font-size: 16px;
-}
+
 @media (max-width: 767px) {
     .index {
         padding-top: 80px;
@@ -107,10 +101,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .index h1 {
-    margin-bottom: 50px;
-  }
-  
+
 }
 
 /* ----------------------------------
@@ -167,21 +158,18 @@ body {
 .desc .desc__introduces:first-child {
     border-top: none;
 }
-.desc .desc__introduces h3,
-.desc .desc__introduces p {
-    margin: 0 auto;
-}
+
 .desc .desc__introduces h3 {
-    padding: 20px 0 14px;
     max-width: 900px;
-    font-size: 28px;
 	color:#333;
+    margin-left: auto;
+    margin-right: auto;
 }
 .desc .desc__introduces p {
-    padding-bottom: 40px;
-    max-width: 900px;
-    font-size: 18px;
     color: #333;
+	max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .desc .desc__introduces .photo--responsive img {
     width: 100%;
@@ -203,31 +191,23 @@ body {
     top: 0;
     left: 0;
 }
-.desc .desc__features h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+
 .desc .desc__features p {
-    font-size: 16px;
+
     color: #888;
-    line-height: 26px;
+
 }
 @media (max-width: 767px) {
     .desc .desc__introduces h3 {
-        padding-top: 20px;
         text-align: left;
     }
     .desc .desc__introduces p {
         text-align: left;
     }
-    .desc .desc__features {
-        margin-top: 20px;
-    }
     .desc .desc__features .row {
         margin-bottom: 20px;
     }
     .desc .desc__features .row p {
-        padding-bottom: 20px;
         text-align: left;
     }
     .desc .desc__features .features__photo {
@@ -254,49 +234,6 @@ body {
     .docs-header {
         padding-top: 0;
     }
-}
-/* ----------------------------------
- * advertisement
- * ---------------------------------- */
-.advertisement {
-  width: auto !important;
-  padding: 10px !important;
-  overflow: hidden; /* clearfix */
-  font-size: 13px !important;
-  line-height: 18px !important;
-  text-align: left;
-  background: #50c1e9 !important;
-  border: 0 !important;
-  border-radius: 4px;
-  box-shadow: inset 0 3px 5px rgba(0,0,0,.075);
-  height: 121px;
-}
-.advertisement-image {
-  margin: 0 !important;
-  position: absolute;
-}
-.advertisement-text {
-  margin-left: 100px !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.advertisement-text a {
-  color: #fff !important;
-}
-@media (max-width: 767px) {
-  .advertisement {
-    position: static;
-    margin-top: 30px;
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.075), 0 1px 0 rgba(255,255,255,.1);
-  }
-}
-@media (min-width: 768px) {
-  .advertisement {
-    position: absolute;
-    top: 5px;
-    right: 15px; /* 15px instead of 0 since box-sizing */
-    padding: 15px !important;
-    width: 300px !important;
-  }
 }
 /* ----------------------------------
  * navbar
@@ -370,14 +307,12 @@ body {
     padding: 50px 0 110px;
 }
 .topic h1 {
-    margin-top: 30px;
     color: rgba(255,255,255,1.0);
-    font-weight: normal;
+
 }
 .topic h2 {
-    margin-top: 15px;
     color: rgba(255,255,255,0.87);
-    font-weight: normal;
+
 }
 .topic .topic__infos {
     position: absolute;
@@ -519,14 +454,12 @@ data-table table {
     margin-bottom: 20px;
 }
 .example .example-title {
-    margin-bottom: 20px;
-    font-weight: 700;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+	
 }
 .example .example-title span {
-    font-weight: normal;
-    font-size: 14px;
     color: #ED5565;
+	font-size: 1.6rem;
 }
 .example [class*="col-"] {
     margin-bottom: 10px;
@@ -590,10 +523,7 @@ data-table table {
     position: absolute;
     bottom: 2px;
     left: 0;
-    font-size: 13px;
-    line-height: 13px;
     color: #AAB2BD;
-    font-weight: 400;
 }
 .example-typography .text-note {
     bottom: auto;
@@ -626,41 +556,11 @@ data-table table {
 }
 .color-swatches .infos h4 {
     margin-bottom: 3px;
-    font-weight: bold;
-    font-size: 14px;
 }
 .color-swatches .infos p {
-    font-size: 12px;
+
 }
-/* ----------------------------------
- * psd-download
- * ---------------------------------- */
-.psd-download {
-    padding: 40px 0;
-    background: #e6e9ed url(../img/github.png) no-repeat 100% 0;
-    min-height: 680px;
-}
-.psd-download h2 {
-    text-align: center;
-}
-.psd-download .infos {
-    font-size: 20px;
-    line-height: 40px;
-}
-.psd-download .row {
-    margin-top: 20px;
-}
-@media (max-width: 768px) {
-    .psd-download [class*="col-md-"] {
-        text-align: center;
-    }
-}
-.psd-download h4 {
-    margin: 0 0 15px 0;
-}
-.psd-download img {
-    margin-bottom: 15px;
-}
+
 /* ----------------------------------
  * previews
  * ---------------------------------- */
@@ -668,13 +568,21 @@ data-table table {
     text-align: center;
 }
 .previews p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 40px;
 }
 .previews img {
     max-width: 100%;
 }
+/* ----------------------------------
+ * Section and Content styling
+ * ---------------------------------- */
+ hr.section {
+	border-top: 3px solid #2a6ebb;
+	margin: 40px 0px; 
+	 
+ }
+ 
+ 
+ 
 /* ----------------------------------
  * btn-group & labels
  * ---------------------------------- */
