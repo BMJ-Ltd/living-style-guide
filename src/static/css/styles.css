@@ -346,7 +346,7 @@ body {
  * documents
  * ---------------------------------- */
 .documents {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 /* ----------------------------------
  * details
@@ -452,6 +452,9 @@ data-table table {
  * ---------------------------------- */
 .example {
     margin-bottom: 20px;
+}
+.example h1 {
+    font-weight: 700;
 }
 .example .example-title {
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
