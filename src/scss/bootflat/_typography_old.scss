@@ -1,0 +1,314 @@
+/* @fontbase = 14
+@line-height-base = 20
+*/
+
+
+// Variables
+//------------------------------------------------------
+
+$bmj_font: "interfaceregular", Helvetica, Arial, sans-serif;
+$main_font: "Helvetica Neue", helvetica, Arial, sans-serif;
+$monospace_font: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$font-family-sans-serif:  "interfaceregular", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+$body-font-color:            $grey-dark !default;
+$body-background-color:      $white !default;
+
+$link-font-color:            $brand-primary !default; 
+$link-font-color-hover:      $brand-primary-lighter !default; 
+
+$blockquote-border-color:    $mediumgray-light !default;
+
+$image-radius:               4px !default;
+
+$bmj_font: "interfaceregular", Helvetica, Arial, sans-serif;
+$main_font: "Helvetica Neue", helvetica, Arial, sans-serif;
+$monospace_font: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$font-family-sans-serif:  "interfaceregular", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-base:          16px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~22px
+$font-size-small:         ceil(($font-size-base * 0.85)); // ~15px
+$font-size-mini:      	ceil(($font-size-base * 0.75)); // ~13px
+
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~44px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~36px
+$font-size-h3:            ceil(($font-size-base * 1.70)); // ~29px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~22px
+$font-size-h5:            $font-size-base; // ~17px
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~15px
+
+/* Unit-less `line-height` for use in components like buttons. */
+//$line-height-base:        1.428571429; // 20/14
+$line-height-base:        1.352941176; // 23px/17px
+
+/*Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.*/
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~23px
+
+/* By default, this inherits from the `<body>`. */
+$headings-font-family:    inherit;
+$headings-font-weight:    500;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
+
+
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("typography") {
+	
+
+  /**
+   * typography
+   * --------------------------------------------------
+   */
+   
+// html {
+//     font-size: 87.5%;   
+// }
+
+//
+// Base
+//
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+  -webkit-text-size-adjust: 100%;  // Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+  -ms-text-size-adjust: 100%;
+  // @include breakpoint ($tablet, $no-query: '.no-mqs') {
+  //   font-size: 100%; /* 16px */
+  // }
+  // @include breakpoint ($desktop, $no-query: '.no-mqs') {
+  //   font-size: 112.5%; /* 18px */
+  // }
+  // @include breakpoint ($large-screen, $no-query: '.no-mqs') {
+  //   font-size: 125%; /* 20px */
+  // }
+}
+
+
+html, button, input, select, textarea {
+  font-family: $main_font;
+  color: $body-font-color;
+}
+
+code {
+  font-family: $font-family-monospace;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+// @media (min-width: 768px) {
+//     html {
+//         font-size: 100%; /* 16px */
+//     }
+// }
+
+/* Medium devices (desktops, 992px and up) */
+// @media (min-width: 980px) {
+//     html {
+//         font-size: 112.5%; /* 18px */
+//     }
+// }
+
+/* Large devices (large desktops, 1200px and up) */
+// @media (min-width: 1200px) {
+//     html {
+//         font-size: 125%; /* 20px */
+//     }
+// }
+
+H1, H2, H3 {
+  line-height: 1.428; /* $line-height-base ÷ $fontbase */
+  font-weight: bold;
+}
+
+
+// body {
+//     font-size: 16px;
+//     font-size: 1rem;
+//     line-height: 1.428; $line-height-base ÷ $fontbase
+//     text-rendering: optimizelegibility;
+//     font-family: $font-family-sans-serif;
+// }
+
+body {
+  margin: 0;
+  @include font-size(14);
+  font-family: $bmj_font;
+  letter-spacing: 0.03em;
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: $bmj_font;
+	word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    line-height: 1.3em;
+    color: inherit;
+  }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small,
+  .h1 small,
+  .h2 small,
+  .h3 small,
+  .h4 small,
+  .h5 small,
+  .h6 small {
+    color: #e7e9ec;
+  }
+h1.page-title {
+  @include font-size(27, 30);
+  // font-size: 32px;
+  // font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+h1 {
+  @include font-size(30, 25);
+  // font-size: 28px;
+  // font-size:1.57rem;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+}
+h2 {
+  @include font-size(24, 30);
+  // font-size: 24px;
+  // font-size: 1.36rem;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+}
+h3 {
+  @include font-size(22, 30);
+  // font-size: 22px;
+  // font-size: 1.21rem;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+}
+h4 {
+  @include font-size(21, 25);
+  // font-size: 21px;
+  // font-size: 1.14rem;
+}
+h5 {
+  @include font-size(19, 25);
+  // font-size: 19px;
+  // font-size: 1.07rem;
+}
+h6 {
+  @include font-size(18, 25);
+  // font-size: 18px;
+  // font-size: 1rem;
+}
+p, ul, ol {    
+  @include font-size(16, 25);
+  // font-size: 18px;
+  // font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+table {
+  @include font-size(16, 30);
+  // font-size: 16px;
+  // font-size: 0.8rem;
+}
+
+small, aside {
+  @include font-size(16, 30);
+  // font-size: 16px;
+  // font-size: 0.7rem;
+}
+
+H1:first-child, 
+H2:first-child, 
+H3:first-child,
+div+H1, 
+div+H2, 
+div+H3 {
+  margin-top: 0;
+}
+
+
+
+/* Article lists */
+article ul {
+  list-style: none outside none;
+  padding-left: 0;
+  text-indent: -15px;
+  margin-left: 18px;
+}
+
+article ul li,
+article ol li {
+  padding: 1% 0;
+}
+
+article ul li {
+  list-style-type: none;
+}
+
+article ul li:before {
+  color: #999999;
+  content: "\2666";
+  @include font-size(14);
+  // font-size: 14px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+/* Aside */
+
+small, aside {
+  h1 {
+    @include font-size(28);
+  }
+  h2 {
+    @include font-size(26);
+  }
+  h3 {
+    @include font-size(24);
+  }
+  h4 {
+    @include font-size(22);
+  }
+  h5 {
+    @include font-size(20);
+  }
+  h6 {
+    @include font-size(18);
+  }
+  p, ul {  
+    @include font-size(14);  
+  }
+}
+
+}
+
+
+
+
