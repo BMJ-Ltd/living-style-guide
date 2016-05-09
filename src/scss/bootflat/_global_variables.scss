@@ -26,43 +26,103 @@ $white:                  lighten(#000, 100%); // #fff
 // BMJ BLUES
 // -------------------------
 $bmjBlue:       		#2A6EBB;
-$bmjBlueDark:           darken($bmjBlue, 20%);  
+$bmjBlueDark:           darken($bmjBlue, 10%);  
 $bmjBlueDarker:         darken($bmjBlue, 40%);  
 $bmjBlueLight:          lighten($bmjBlue, 10%);  
 $bmjBlueLighter:        lighten($bmjBlue, 25%);  
 $bmjBlueLightest:       lighten($bmjBlue, 50%);  
 $bmjBlueFade:           fade($bmjBlue, 10%);  
 $bmjBlueFader:      	fade($bmjBlue, 25%);  
-$bmjBlueFadest:       	fade($bmjBlue, 50%);  
+$bmjBlueFadest:       	fade($bmjBlue, 50%); 
+
+
+// BMJ GREYS
+// -------------------------
+$bmjGrey:                   #747678;
+$bmjGrey-darker:            darken($bmjGrey, 20%);
+$bmjGrey-dark:              darken($bmjGrey, 10%);
+$bmjGrey-light:             lighten($bmjGrey, 10%);
+$bmjGrey-lighter:       	lighten($bmjGrey, 30%);
+
+
+ 
 
 //BMJ SECONDARY PALETTE
 // -------------------------
+
+// Lightest= 50 Light= 100 dark= 700
+
 $blue:                  $bmjBlue;
-$blueDark:              $bmjBlueDark;
+$blueDark:              #1F5189;
+$blueLight:             #B4CFEE;
+$blueLightest:          #F2F7FC;
+$lightBlueLighter:      lighten($blueLight, 25%);
+$lightBlueDarker:       darken($blueLight, 10%);
+$grey:                  #747678;
+$greyDark:              #565759;
+$greyLight:             #D4D4D5;
+$greyLightest:          #FBFBFB;
+$greyLighter:     		lighten($grey, 25%);
+$greyDarker:       		darken($grey, 10%);
 $green:                 #69BE28;
+$greenDark:             #4D8B1D;
+$greenLight:            #CDEFB4;
+$greenLightest:         #F7FCF3;
 $greenLighter:          lighten($green, 25%);
+$greenDarker:         	darken($green, 10%);
 $red:                   #CD202C;
+$redDark:               #981821;
+$redLight:              #F4B6BA;
+$redLightest:           #FEF8F9;
 $redLighter:            lighten($red, 25%);
+$redDarker:            	darken($red, 10%);
 $yellow:                #F0AB00;
+$yellowDark:            #B37F00;
+$yellowLight:           #FFE8AE;
+$yellowLightest:        #FFFEFA;
 $yellowLighter:			lighten($yellow, 25%);
+$yellowDarker:          darken($yellow, 10%);
 $orange:                #E37222;
+$orangeDark:            #B15716;
+$orangeLight:           #F8DDC9;
+$orangeLightest:        #FFFFFF;
 $orangeLighter:			lighten($yellow, 25%);
+$orangeDarker:			darken($orange, 10%);
 $pink:                  #C50084;
+$pinkDark:              #88005B;
+$pinkLight:             #FF83D6;
+$pinkLightest:          #FFCFEF;
 $pinkLighter:			lighten($pink, 25%);
+$pinkDarker:			darken($pink, 10%);
 $purple:                #7D5CC6;
-$purpleLighten:			lighten($pink, 25%);
+$purpleDark:            #5E3BAA;
+$purpleLight:           #ECE8F7;
+$purpleLightest:        #FFFFFF;
+$purpleLighten:			lighten($purple, 25%);
+$purpleDarker:			darken($purple, 10%);
+$aqua:                	#00B2A9;
+$aquaDark:              #00756F;
+$aquaLight:             #70FFF8;
+$aquaLightest:         	#BCFFFC;
+$aquaLighten:			lighten($aqua, 25%);
+$aquaDarker:			darken($aqua, 10%);
 
 
 $brand-primary:         $bmjBlue;
 $brand-primary-lighter: $bmjBlueLighter;
+$brand-primary-darker: 	$bmjBlueDark;
 $brand-success:         $green;
 $brand-success-lighter: $greenLighter;
-$brand-info:            $bmjBlueLighter;
-$brand-info-lighter:    $bmjBlueLightest;
+$brand-success-darker:  $greenDarker;
+$brand-info:            $blueLight;
+$brand-info-lighter:    $lightBlueLighter;
+$brand-info-darker:    	$lightBlueDarker;
 $brand-warning:         $yellow;
 $brand-warning-lighter: $yellowLighter;
+$brand-warning-darker: 	$yellowDarker;
 $brand-danger:          $red;
 $brand-danger-lighter:  $redLighter;
+$brand-danger-darker:  	$redDarker;
 
 
 

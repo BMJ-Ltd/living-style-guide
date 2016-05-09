@@ -1,13 +1,13 @@
 // Variables
 //------------------------------------------------------
-$alert-primary:                 $brand-primary-lighter !default;
-$alert-success:                 $brand-success-lighter !default;
-$alert-danger:                  $brand-danger-lighter !default;
-$alert-warning:                 $brand-warning-lighter !default;
+$alert-primary:                 $blueLight !default;
+$alert-success:                 $greenLight !default;
+$alert-danger:                  $redLight !default;
+$alert-warning:                 $yellowLight !default;
 
 $alert-close-color:             $black !default;
 
-$alert-link-color:              $mediumgray-light !default;
+$alert-link-color:              $grey-dark !default;
 
 
 // Exports

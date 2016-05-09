@@ -15,9 +15,12 @@ $message-warning:                  $brand-warning !default;
 $form-font-color:                  $darkgray-dark !default;
 $form-placeholder-font-color:      $lightgray-dark !default;
 
+$form-radius-value:					2px !default;
+
 $form-disabled-color:              $lightgray-dark !default;
 
 $search-query-value:               17px !default;
+
 
 $search-icon-width:                30px !default;
 $search-icon-line-height:          30px !default;          
@@ -34,6 +37,7 @@ $search-icon-line-height:          30px !default;
   .form-control {
       color: $form-font-color;
       border-color: $form-normal;
+	  @include radius($type: border-radius, $value: $form-radius-value);
 
       &,
       &:focus {
@@ -97,7 +101,7 @@ $search-icon-line-height:          30px !default;
       & .search-query:first-child,
       & .search-query:last-child {
           padding: 0 $search-query-value;
-          @include radius($type: border-radius, $value: $search-query-value);
+          @include radius($type: border-radius, $value: 2);
       }
       @at-root .input-group .form-control:last-child {
           // padding: 0 $search-query-value 0 10px;
@@ -109,7 +113,7 @@ $search-icon-line-height:          30px !default;
           @include radius($type: border-bottom-right-radius, $value: 0);
       }
       & .btn {
-          @include radius($type: border-radius, $value: $search-query-value);  
+          @include radius($type: border-radius, $value: 2);  
       }
   }
 
@@ -213,10 +217,10 @@ $search-icon-line-height:          30px !default;
       }
   }
   .form-search .btn {
-		border-radius: 4px;  
+		border-radius: 2px;  
   }
   .form-search .search-query, .form-search .search-query:first-child, .form-search .search-query:last-child {
-		border-radius: 4px;  
+		border-radius: 2px;  
   }
 
 }

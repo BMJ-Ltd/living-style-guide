@@ -1,8 +1,11 @@
 // Variables
 //------------------------------------------------------
-$tab-background-color:                 $grey-lighter !default;
-$tab-background-color-hover:           $grey-lightest !default;
-$tab-radius:                           4px !default;
+$greyLightDarker:       			   darken($greyLight, 10%);
+
+$tab-background-color:                 $greyLight !default;
+
+$tab-background-color-hover:           $greyLightDarker !default;
+$tab-radius:                           2px !default;
 
 $tab-font-color:                       $darkgray-dark !default;
 $tab-font-color-acitve:                $white !default;

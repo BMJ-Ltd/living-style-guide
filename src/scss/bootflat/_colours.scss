@@ -9,6 +9,11 @@
 }
 .colour-palette .light-strong {
     color: #fff;
+	font-weight: bold;
+}
+.colour-palette .dark-strong {
+    color: rgba(0,0,0,0.87);
+	font-weight: bold;
 }
 .colour-palette .colour-group ul {
 	padding-left: 0;	
@@ -33,4 +38,9 @@
 .colour-palette .colour-group li.divide, .colour-palette .colour-group:last-child li.divide {
 	border-top: 4px solid #ffffff;
 	
+}
+.example img {
+	display: block;
+    margin-bottom: 0;
+    width: 100%;
 }

@@ -2,7 +2,7 @@
 
 // Variables
 //------------------------------------------------------
-$button-normal:                  $grey-lighter !default;
+$button-normal:                  $greyLight !default;
 $button-default:                 $white !default;
 $button-primary:                 $brand-primary !default;
 $button-success:                 $brand-success !default;
@@ -10,13 +10,13 @@ $button-danger:                  $brand-danger !default;
 $button-warning:                 $brand-warning !default;
 $button-info:                    $brand-info !default;
 
-$button-normal-hover:            $grey-lightest !default;
-$button-default-hover:           $button-default !default;
-$button-primary-hover:           $brand-primary-lighter !default;
-$button-success-hover:           $brand-success-lighter !default;
-$button-danger-hover:            $brand-danger-lighter !default;
-$button-warning-hover:           $brand-warning-lighter !default;
-$button-info-hover:              $brand-info-lighter !default;
+$button-normal-hover:            $grey !default;
+$button-default-hover:           $greyLightest !default;
+$button-primary-hover:           $brand-primary-darker !default;
+$button-success-hover:           $brand-success-darker !default;
+$button-danger-hover:            $brand-danger-darker !default;
+$button-warning-hover:           $brand-warning-darker !default;
+$button-info-hover:              $brand-info-darker !default;
 
 $button-font-color-dark:         $grey-darker !default;
 $button-font-color-light:        $white !default;
@@ -32,7 +32,7 @@ $btn-font-weight:                normal;
 
 $btn-default-color:              $grey-dark;
 $btn-default-bg:                 $white;
-$btn-default-border:             $grey-lighter;
+$btn-default-border:             $greyLightest;
 
 $btn-primary-color:              $white;
 $btn-primary-bg:                 $brand-primary;
@@ -42,7 +42,7 @@ $btn-success-color:              $white;
 $btn-success-bg:                 $brand-success;
 $btn-success-border:             $btn-success-bg;
 
-$btn-info-color:                 $white;
+$btn-info-color:                 $grey-dark;
 $btn-info-bg:                    $brand-info;
 $btn-info-border:                $btn-info-bg;
 
@@ -77,7 +77,7 @@ $btn-link-disabled-color:        $grey-light;
 }
 
 .btn {
-    color: $button-font-color-light;
+    color: $button-font-color-dark;
 	border-radius: $border-radius-base; 
 
     &,
@@ -133,7 +133,7 @@ $btn-link-disabled-color:        $grey-light;
         &.active {
 			color: $button-font-color-dark;
             border-color: $button-normal-hover;
-            background-color: $button-normal-hover;           
+            background-color: $greyLight;           
         } 
         &,
         &.disabled,
@@ -147,6 +147,7 @@ $btn-link-disabled-color:        $grey-light;
     }
 
     @at-root &-primary {
+	  color: $button-font-color-light;
       &, 
       &:active, 
       &.active,
@@ -207,6 +208,7 @@ $btn-link-disabled-color:        $grey-light;
     }
 
     @at-root &-warning {
+				
       &, 
       &:active, 
       &.active, 
@@ -227,6 +229,8 @@ $btn-link-disabled-color:        $grey-light;
     }
 
     @at-root &-danger {
+		color: $button-font-color-light;
+		
       &, 
       &:active, 
       &.active, 

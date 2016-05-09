@@ -76,7 +76,7 @@ $dropdown-font-weight:                    700 !default;
           left: 100%;
           margin-top: -6px;
           margin-left: -1px;
-          @include radius($type: border-radius, $value: 0 4px 4px 4px);
+          @include radius($type: border-radius, $value: 0 2px 2px 2px);
       }
       &:hover .dropdown-menu {
           display: block;
@@ -86,7 +86,7 @@ $dropdown-font-weight:                    700 !default;
           bottom: 0;
           margin-top: 0;
           margin-bottom: -2px;
-          @include radius($type: border-radius, $value: 4px 4px 4px 0);
+          @include radius($type: border-radius, $value: 2px 2px 2px 0);
       }
       & > a:after {
           display: block;
@@ -113,7 +113,7 @@ $dropdown-font-weight:                    700 !default;
       &.pull-left .dropdown-menu {
           left: -100%;
           margin-left: 10px;
-          @include radius($type: border-radius, $value: 4px 0 4px 4px);
+          @include radius($type: border-radius, $value: 2px 0 2px 2px);
       }
   }
 
