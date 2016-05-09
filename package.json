@@ -1,43 +1,48 @@
 {
-  "name": "bootflat",
-  "private": false,
-  "version": "2.0.3",
-  "description": "BOOTFLAT is an open source Flat UI KIT based on Bootstrap 3.2.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.",
-  "author":"Flathemes <info@flathemes.com>",
-  "homepage": "http://bootflat.github.com/",
+  "name": "living-style-guide",
+  "version": "0.1.0",
+  "description": "BMJ Living Style Guide",
+  "homepage": "http://styleguide.bmj.com/",
+  "author": "Amy Asante <aasante@bmj.com>",
+  "contributors": [
+    "James Skinner <jskinner@bmj.com> (https://github.com/james-skinner)"
+    "Michael O'Connor <moconnor@bmj.com> (https://github.com/moconnor-bmj)"
+  ],
   "keywords": [
-	"mobile",
-	"html5",
-	"css3",
-	"scss",
-	"bootflat",
-	"bootstrap",
-	"flat",
-	"flat ui",
-	"ui"
+    "bmj",
+    "styleguide",
+    "stylesheets",
+    "css",
+    "guide"
   ],
   "bugs": {
-    "url": "https://github.com/bootflat/bootflat.github.io/issues"
+    "url": "https://github.com/BMJ-Ltd/living-style-guide/issues"
   },
   "license": "MIT",
-  "repository" : {
-     "type" : "git",
-     "url" : "https://github.com/bootflat/bootflat.github.io.git"
-   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BMJ-Ltd/living-style-guide.git"
+  },
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-csslint": "~0.2.0",
-    "grunt-contrib-cssmin": "~0.9.0",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-sass": "~0.7.3",
-	"grunt-contrib-watch": "~0.5.3",
-	"breakpoint": "~>0.1.6",
-    "grunt-csscomb": "~2.0.1",
-    "grunt-html-validation": "~0.1.15",
-    "grunt-sed": "~0.1.1",
-    "load-grunt-tasks": "~0.4.0",
-    "time-grunt": "~0.3.1"
-	
+    "breakpoint": "~>0.1.6",
+    "browser-sync": "^2.0.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-concat": "^2.3.4",
+    "gulp-debug": "^1.0.1",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-newer": "^0.3.0",
+    "gulp-notify": "^1.5.0",
+    "gulp-plumber": "^0.6.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^0.3.1",
+    "merge-stream": "^0.1.5",
+    "streamqueue": "^0.1.1"
+  },
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
   }
 }
